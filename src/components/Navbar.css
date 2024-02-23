@@ -1,0 +1,85 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Ensure the navbar stays at the top */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .menu-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+  
+  .menu-dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-links-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-links-desktop a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-buttons button {
+    margin-left: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links-desktop {
+      display: none;
+    }
+    .navbar-links-mobile {
+      display: block;
+    }
+    .navbar-buttons {
+      display: none;
+    }
+  }
+  

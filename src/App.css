@@ -1,3 +1,17 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+body {
+  margin: 0; /* Reset default body margin */
+  padding-top: 60px; /* Adjust padding to match the height of the navbar */
+}
+
+/* Adjust padding/margin as needed for different screen sizes */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px; /* Increase padding for smaller screens if needed */
+  }
+}
+
+/* 
 .App {
   text-align: center;
 }
@@ -35,4 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

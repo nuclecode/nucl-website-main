@@ -1,0 +1,30 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five columns with equal width */
+    gap: 20px; /* Gap between columns */
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+
+  .footer-lower {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
