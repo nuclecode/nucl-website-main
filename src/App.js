@@ -21,7 +21,7 @@ function App() {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
-          <Route path="/enquiry" component={EnquiryForm} />
+          <Route path="/schedule-a-call" component={EnquiryForm} />
         </Routes>
         <EnquiryForm />
         <Footer />
