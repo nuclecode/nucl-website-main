@@ -23,6 +23,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/enquiry" component={EnquiryForm} />
         </Routes>
+        <EnquiryForm />
         <Footer />
       </div>
     </Router>
