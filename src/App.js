@@ -18,15 +18,13 @@ function App() {
       <div>
         <Navig />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/solutions" component={Solutions} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/about" component={About} />
-          <Route path="/schedule-a-call" component={EnquiryForm} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/schedule-a-call" element={<EnquiryForm />} />
         </Routes>
-        <EnquiryForm />
-        <Solutions />
         <Footer />
       </div>
     </Router>
