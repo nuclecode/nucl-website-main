@@ -24,23 +24,25 @@ function Navbar() {
               <div className="menu-dropdown">
                 <Link to="/">Home</Link>
                 <Link to="/portfolio">Portfolio</Link>
+                <Link to="/solutions">Solutions</Link>
                 <Link to="/about">About us</Link>
                 <Link to="/contact">Contact us</Link>
                 <Link to="/route1" className="cta-button">Button 1</Link>
-                <Link to="/schedule-a-call" className="cta-button">Schedule a call</Link>
+                <Link to="/schedule-a-call" className="cta-button">Book a Chat</Link>
               </div> 
             )}
           </div>
           <div className="navbar-links-desktop">
                 <Link to="/">Home</Link>
                 <Link to="/portfolio">Portfolio</Link>
+                <Link to="/solutions">Solutions</Link>
                 <Link to="/about">About us</Link>
                 <Link to="/contact">Contact us</Link>
           </div>
         </div>
         <div className="navbar-buttons">
                 <Link to="/route1" className="cta-button">Button 1</Link>
-                <Link to="/schedule-a-call" className="cta-button">Schedule a call</Link>
+                <Link to="/schedule-a-call" className="cta-button">Chat with Viola</Link>
         </div>
       </div>
     </nav>
