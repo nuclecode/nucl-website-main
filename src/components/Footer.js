@@ -5,44 +5,28 @@ function Footer() {
     const currentYear = new Date().getFullYear();
     const columns = [
       {
-        title: 'Column 1',
+        title: 'Solutions',
         links: [
-          { text: 'Page 1', url: '/page1' },
-          { text: 'Page 2', url: '/page2' },
-          { text: 'Page 3', url: '/page3' },
+          { text: 'Front End', url: '/solutions' },
+          { text: 'Back End', url: '/solutions' },
+          { text: 'Software Testing', url: '/solutions' },
         ],
-        logo: true, // Show logo in the first column
+        logo: true, //logo in 1st col
       },
       {
-        title: 'Column 2',
+        title: 'Portfolio',
         links: [
-          { text: 'Link 1', url: '/link1' },
-          { text: 'Link 2', url: '/link2' },
-          { text: 'Link 3', url: '/link3' },
-        ],
-      },
-      {
-        title: 'Column 2',
-        links: [
-          { text: 'Link 1', url: '/link1' },
-          { text: 'Link 2', url: '/link2' },
-          { text: 'Link 3', url: '/link3' },
+          { text: 'Case study 1', url: '/portfolio' },
+          { text: 'Case study 2', url: '/portfolio' },
+          { text: 'Case study 3', url: '/portfolio' },
         ],
       },
       {
-        title: 'Column 2',
+        title: 'Company',
         links: [
-          { text: 'Link 1', url: '/link1' },
-          { text: 'Link 2', url: '/link2' },
-          { text: 'Link 3', url: '/link3' },
-        ],
-      },
-      {
-        title: 'Column 2',
-        links: [
-          { text: 'Link 1', url: '/link1' },
-          { text: 'Link 2', url: '/link2' },
-          { text: 'Link 3', url: '/link3' },
+          { text: 'About', url: '/about' },
+          { text: 'Contact', url: '/contact' },
+          
         ],
       },
     ];
