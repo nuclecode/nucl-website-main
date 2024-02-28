@@ -1,11 +1,12 @@
 .navbar {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFA1A1;
+    color: #000;
     padding: 10px;
     position: fixed;
     width: 100%;
     top: 0; /* Ensure the navbar stays at the top */
     z-index: 1000; /* Ensure the navbar is above other elements */
+    font-family: 'Coustard', serif;
   }
   
   .navbar-container {
@@ -31,7 +32,7 @@
     font-size: 1.5rem;
     border: none;
     background: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
   }
   
@@ -41,14 +42,14 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #FFA1A1;
     width: 100%;
   }
   
   .menu-dropdown a {
     padding: 10px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
   
   .navbar-links-desktop {
@@ -59,14 +60,14 @@
   .navbar-links-desktop a {
     margin: 0 10px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
   
   .navbar-buttons button {
     margin-left: 10px;
     border: none;
-    background-color: #fff;
-    color: #333;
+    background-color: #000;
+    color: #eefce4;
     padding: 5px 10px;
     cursor: pointer;
   }

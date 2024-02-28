@@ -27,7 +27,7 @@ function Navbar() {
                 <Link to="/solutions">Solutions</Link>
                 <Link to="/about">About us</Link>
                 <Link to="/contact">Contact us</Link>
-                <Link to="/route1" className="cta-button">Button 1</Link>
+                <Link to="/start-a-project" className="cta-button">Start a project</Link>
                 <Link to="/schedule-a-call" className="cta-button">Book a Chat</Link>
               </div> 
             )}
@@ -41,7 +41,7 @@ function Navbar() {
           </div>
         </div>
         <div className="navbar-buttons">
-                <Link to="/route1" className="cta-button">Button 1</Link>
+                <Link to="/start-a-project" className="cta-button">Start a project</Link>
                 <Link to="/schedule-a-call" className="cta-button">Chat with Viola</Link>
         </div>
       </div>
