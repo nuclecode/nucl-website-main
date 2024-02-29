@@ -16,7 +16,7 @@
   }
   
   .navbar-logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .navbar-links {
@@ -29,7 +29,7 @@
   
   .menu-icon {
     display: block;
-    font-size: 1.5rem;
+    font-size: 16px;
     border: none;
     background: none;
     color: #000;
@@ -61,6 +61,7 @@
     margin: 0 10px;
     text-decoration: none;
     color: #000;
+    font-size: 16px;
   }
   
   .navbar-buttons button {
@@ -70,6 +71,7 @@
     color: #eefce4;
     padding: 5px 10px;
     cursor: pointer;
+    font-size: 16px;
   }
   
   @media (max-width: 768px) {

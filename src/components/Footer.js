@@ -87,6 +87,9 @@ function Footer() {
         <a href="https://www.linkedin.com/company/nuclecode/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
         </a>
+        <a href="https://www.facebook.com/nuclecode/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook"></i>
+        </a>
       </div>
       <style jsx>{`
         .footer {
