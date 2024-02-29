@@ -17,7 +17,7 @@ function Footer() {
       title: 'Solutions',
       links: [
         { text: 'Front End', url: '/frontend' },
-        { text: 'Back End', url: '/solutions/backend' },
+        { text: 'Back End', url: '/backend' },
         { text: 'Software Testing', url: '/software-testing' },
       ],
       logo: true,
