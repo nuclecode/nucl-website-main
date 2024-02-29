@@ -9,8 +9,8 @@ function Contact() {
 
       {/* Contact Info */}
       <div className="contact-info">
-        <p>Phone: +1 123 456 7890</p>
-        <p>Email: info@example.com</p>
+        <p>Phone: +44 (0) 7355 573 823</p>
+        <p>Email: hire@nuclecode.uk</p>
         {/* Add more contact information as needed */}
       </div>
 
