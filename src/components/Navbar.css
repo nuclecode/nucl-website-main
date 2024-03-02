@@ -1,11 +1,11 @@
 .navbar {
-    background-color: #FFA1A1;
     color: #000;
     padding: 10px;
     position: fixed;
+    margin-bottom: 0;
     width: 100%;
-    top: 0; /* Ensure the navbar stays at the top */
-    z-index: 1000; /* Ensure the navbar is above other elements */
+    top: 0;
+    z-index: 1000;
     font-family: 'Coustard', serif;
   }
   

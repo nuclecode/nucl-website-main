@@ -1,23 +1,92 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
+import { Grid, Card, CardContent, Typography, Button } from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-function Home ()
-{
+function Home () {
+
+    const cardStyles = {
+    borderRadius: 16, // Adjust border radius as needed
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add box shadow for depth
+    padding: 16, // Add padding for content
+  };
     return (
 <div className="home-container">
-      <section className="hero-section">
-        <h1>Welcome to Our Website</h1>
-        <p>We specialize in providing cutting-edge solutions for your business needs.</p>
-        <Link to="/contact" className="cta-button">Get Started</Link>
+<section className="hero-section hero-section-background">
+        <div className="hero-banner">
+        <Typography variant="h1">Welcome to Our Website</Typography>
+          <Typography variant="body1">We specialize in providing cutting-edge solutions for your business needs.</Typography>          <Link to="/portfolio" className="pf-btn">Portfolio</Link>
+          <Link to="/schedule-a-call" className="cta-button">Get Started</Link>
+        </div>
       </section>
       
-      <section className="services-section">
+      <section className="services-section" style={{ padding: '0 16px' }}>
         <h2>Our Services</h2>
-        <ul>
-          <li><Link to="/frontend">Frontend Development</Link> - Crafting beautiful and intuitive user interfaces.</li>
-          <li><Link to="/backend">Backend Development</Link> - Building robust and scalable server-side applications.</li>
-          <li><Link to="/software-testing">Software Testing</Link> - Ensuring the quality and reliability of your software products.</li>
-        </ul>
+        <Grid container spacing={3} justifyContent="center">
+          {/* Service 1 */}
+          <Grid item xs={12} sm={4}>
+            <Card style={cardStyles}>
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Frontend Development
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  Crafting beautiful and intuitive user interfaces.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  endIcon={<ArrowForwardIcon />}
+                  component={Link}
+                  to="/frontend"
+                >
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card style={cardStyles}>
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Backend Development
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  Building robust and scalable server-side applications.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  endIcon={<ArrowForwardIcon />}
+                  component={Link}
+                  to="/backend"
+                >
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+          {/* Software Testing */}
+          <Grid item xs={12} sm={4}>
+            <Card style={cardStyles}>
+              <CardContent>
+                <Typography variant="h6" gutterBottom>
+                  Software Testing
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  Ensuring the quality and reliability of your software products.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  endIcon={<ArrowForwardIcon />}
+                  component={Link}
+                  to="/software-testing"
+                >
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
       </section>
       
       <section className="about-section">
