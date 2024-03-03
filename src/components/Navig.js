@@ -29,7 +29,7 @@ function Navbar() {
           <Logo style={{ height: 40, width: 'auto' }} />
           </Button>
         </Typography>
-{/* BEGINNING OF MOBILE BURGER MENU */}
+{/* MOBILE BURGER MENU */}
         {isMobile ? (
           <>
             <IconButton onClick={toggleMenu} color="inherit" sx={{ ml: 'auto' }}>
@@ -46,13 +46,13 @@ function Navbar() {
               <MenuItem onClick={() => handleButtonClick('/')}>Home</MenuItem>
               <MenuItem onClick={() => handleButtonClick('/portfolio')}>Portfolio</MenuItem>
               <MenuItem onClick={() => handleButtonClick('/solutions')}>Solutions</MenuItem>
-              <MenuItem onClick={() => handleButtonClick('/about')}>About us</MenuItem>
-              <MenuItem onClick={() => handleButtonClick('/contact')}>Contact us</MenuItem>
+              <MenuItem onClick={() => handleButtonClick('/about')}>About</MenuItem>
+              <MenuItem onClick={() => handleButtonClick('/contact')}>Contact</MenuItem>
               <MenuItem onClick={() => handleButtonClick('/start-a-project')}>
                 Start a project
               </MenuItem>
               <MenuItem onClick={() => handleButtonClick('/schedule-a-call')}>
-                Book a Chat
+                Book a chat
               </MenuItem>
             </Menu>
           </>
@@ -69,10 +69,10 @@ function Navbar() {
                 Solutions
               </Button>
               <Button onClick={() => handleButtonClick('/about')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
-                About us
+                About
               </Button>
               <Button onClick={() => handleButtonClick('/contact')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
-                Contact us
+                Contact
               </Button>
             </div>
             <div>
@@ -82,7 +82,7 @@ function Navbar() {
                 variant="outlined" // Set the variant to outlined
                 sx={{ mx: 2, borderColor: 'pink', textTransform: 'capitalize' }} // Set the border color to pink
               >
-                Start a project
+                Start&nbsp;<span style={{ textTransform: 'lowercase' }}>a&nbsp;project</span>
               </Button>
               <Button
                 onClick={() => handleButtonClick('/schedule-a-call')}
@@ -90,7 +90,7 @@ function Navbar() {
                 variant="outlined" // Set the variant to outlined
                 sx={{ mx: 2, borderColor: 'pink', textTransform: 'capitalize' }} // Set the border color to pink
               >
-                Book a Chat
+                Book&nbsp;<span style={{ textTransform: 'lowercase' }}>a&nbsp;chat</span>
               </Button>
             </div>
           </>
