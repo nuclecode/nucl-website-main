@@ -9,7 +9,7 @@ function Home () {
 
     const cardStyles = {
     borderRadius: 16,
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add box shadow for depth
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     padding: 16,
   };
     return (
