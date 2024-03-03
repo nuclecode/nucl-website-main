@@ -79,7 +79,7 @@ function Navbar() {
               <Button
                 onClick={() => handleButtonClick('/start-a-project')}
                 color="inherit"
-                variant="outlined" // Set the variant to outlined
+                variant="outlined" 
                 sx={{ mx: 2, borderColor: 'pink', textTransform: 'capitalize' }} // Set the border color to pink
               >
                 Start&nbsp;<span style={{ textTransform: 'lowercase' }}>a&nbsp;project</span>
@@ -87,7 +87,7 @@ function Navbar() {
               <Button
                 onClick={() => handleButtonClick('/schedule-a-call')}
                 color="inherit"
-                variant="outlined" // Set the variant to outlined
+                variant="outlined" 
                 sx={{ mx: 2, borderColor: 'pink', textTransform: 'capitalize' }} // Set the border color to pink
               >
                 Book&nbsp;<span style={{ textTransform: 'lowercase' }}>a&nbsp;chat</span>

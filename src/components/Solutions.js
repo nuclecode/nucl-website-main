@@ -7,16 +7,38 @@ import '../App.css';
 function Solutions() {
   return (
     <div className="solutions-container">
-      <div className="solutions-hero-section">
+      <section className="solutions-hero-section solutions-hero-section-background">
+        <div className="hero-banner">
+        <Typography variant="h1"
+                    sx={{
+                    fontFamily: '"Coustard", serif',
+                    fontWeight: 900,
+                    fontStyle: 'normal'
+                  }}
+                >
+        Solutions
+        </Typography>
+        <Typography variant="h6"
+                    sx={{
+                    fontFamily: '"Coustard", serif',
+                    fontWeight: 400,
+                    fontStyle: 'normal'
+                  }}
+                >
+                Resilient websites. Fortified code bases. Trusted testing practices.</Typography>
+          <div style={{ marginTop: '3rem' }}>
+          <Link to="#" className="solutions-xplor-btn">Explore</Link>
+          </div>
+        </div>
+      </section>
         <div>
-        <h1>Solutions</h1>
         <p>
           Whether it's to create your website from scratch or to implement a CI/CD pipeline with
           custom tests, we are sure that we can help. Take a look at the range of services our
           professionals can help you with.
         </p>
         </div>
-      </div>
+      
 
       <div className="solutions-content">
         <h2>Services</h2>
