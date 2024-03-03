@@ -17,8 +17,11 @@ function Home () {
 <section className="hero-section hero-section-background">
         <div className="hero-banner">
         <Typography variant="h1">The future of your website secured</Typography>
-          <Typography variant="h6">Get secure and tested code to make your website less prone to exploits, with long-lasting effects</Typography>          <Link to="/portfolio" className="pf-btn">Portfolio</Link>
+          <Typography variant="h6">Get secure and tested code to make your website less prone to exploits, with long-lasting effects</Typography>
+          <div style={{ marginTop: '3rem' }}>
+          <Link to="/portfolio" className="pf-btn">Portfolio</Link>
           <Link to="/schedule-a-call" className="cta-button">Get Started</Link>
+          </div>
         </div>
       </section>
       
