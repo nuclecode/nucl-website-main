@@ -5,7 +5,6 @@ body {
   /* overflow-x: hidden; */
 }
 
-/* Adjust padding/margin as needed for different screen sizes */
 @media (max-width: 768px) {
   body {
     padding-top: 80px; /* Increase padding for smaller screens if needed */
@@ -83,11 +82,11 @@ body {
 }
 
 .hero-section h1 {
-  font-size: 3rem; /* Adjust font size as needed */
+  font-size: 3rem;
 }
 
 .hero-section p {
-  font-size: 2rem; /* Adjust font size as needed */
+  font-size: 2rem;
 }
 
 .hero-section .cta-button {
@@ -158,3 +157,7 @@ body {
   }
 }
 /*END OF BANNER ON HERO*/
+
+/*START OF SERVICES SECTION*/
+
+/*END OFG SERVICES SECTION*/
