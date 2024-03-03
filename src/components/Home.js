@@ -40,8 +40,9 @@ function Home () {
                   endIcon={<ArrowForwardIcon />}
                   component={Link}
                   to="/frontend"
+                  style={{ textTransform: 'capitalize' }}
                 >
-                  Learn More
+                  Learn&nbsp;<span style={{ textTransform: 'lowercase' }}>more</span>
                 </Button>
               </CardContent>
             </Card>
@@ -60,8 +61,9 @@ function Home () {
                   endIcon={<ArrowForwardIcon />}
                   component={Link}
                   to="/backend"
+                  style={{ textTransform: 'capitalize' }}
                 >
-                  Learn More
+                  Learn&nbsp;<span style={{ textTransform: 'lowercase' }}>more</span>
                 </Button>
               </CardContent>
             </Card>
@@ -81,8 +83,9 @@ function Home () {
                   endIcon={<ArrowForwardIcon />}
                   component={Link}
                   to="/software-testing"
+                  style={{ textTransform: 'capitalize' }}
                 >
-                  Learn More
+                  Learn&nbsp;<span style={{ textTransform: 'lowercase' }}>more</span>
                 </Button>
               </CardContent>
             </Card>
@@ -105,7 +108,7 @@ function Home () {
       <section className="start-today-section" style={{ padding: '20px', textAlign: 'center' }}>
         <h2 style={{ padding: '20px' }}>Ready to start a project?</h2>
         <p>Have a project in mind or need help with an existing one?</p>
-        <Button variant="contained" component={Link} to={'/schedule-a-chat'}>Let's chat!</Button>
+        <Button variant="contained" component={Link} to={'/schedule-a-chat'} style={{ textTransform: 'capitalize' }}>Let&apos;s&nbsp;<span style={{ textTransform: 'lowercase' }}>chat!</span></Button>
       </section>
 
       <section className="subscribe-newsletter" style={{ padding: '20px', textAlign: 'center' }}>
@@ -121,7 +124,7 @@ function Home () {
       autoComplete="off"
     >
       <TextField id="standard-basic" label="Standard" variant="standard" />
-      <Button variant="contained" component={Link} to={'/terms-and-conditions'}>Sign me up</Button>
+      <Button variant="contained" component={Link} to={'/terms-and-conditions'} style={{ textTransform: 'capitalize' }}>Sign&nbsp;<span style={{ textTransform: 'lowercase' }}>me up</span></Button>
     </Box>
     <p style={{ fontSize:'13px', padding: '0 20 0 15' }}>
       By signing up to nuclecode tech newsletter, you agree to the&nbsp;
