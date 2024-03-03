@@ -20,10 +20,11 @@ function Navbar() {
     setMenuOpen(false);
   };
 
+
   return (
     <AppBar position="fixed" color="default">
       <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Typography variant="h6">
+        <Typography>
           <Button component="a" href="/" color="inherit">
           <Logo style={{ height: 40, width: 'auto' }} />
           </Button>
@@ -58,19 +59,19 @@ function Navbar() {
         ) : (
           <>
             <div>
-              <Button onClick={() => handleButtonClick('/')} color="inherit" sx={{ mx: 2 }}>
+              <Button onClick={() => handleButtonClick('/')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
                 Home
               </Button>
-              <Button onClick={() => handleButtonClick('/portfolio')} color="inherit" sx={{ mx: 2 }}>
+              <Button onClick={() => handleButtonClick('/portfolio')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
                 Portfolio
               </Button>
-              <Button onClick={() => handleButtonClick('/solutions')} color="inherit" sx={{ mx: 2 }}>
+              <Button onClick={() => handleButtonClick('/solutions')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
                 Solutions
               </Button>
-              <Button onClick={() => handleButtonClick('/about')} color="inherit" sx={{ mx: 2 }}>
+              <Button onClick={() => handleButtonClick('/about')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
                 About us
               </Button>
-              <Button onClick={() => handleButtonClick('/contact')} color="inherit" sx={{ mx: 2 }}>
+              <Button onClick={() => handleButtonClick('/contact')} color="inherit" sx={{ mx: 2, textTransform: 'capitalize' }}>
                 Contact us
               </Button>
             </div>
@@ -79,7 +80,7 @@ function Navbar() {
                 onClick={() => handleButtonClick('/start-a-project')}
                 color="inherit"
                 variant="outlined" // Set the variant to outlined
-                sx={{ mx: 2, borderColor: 'pink' }} // Set the border color to pink
+                sx={{ mx: 2, borderColor: 'pink', textTransform: 'capitalize' }} // Set the border color to pink
               >
                 Start a project
               </Button>
@@ -87,7 +88,7 @@ function Navbar() {
                 onClick={() => handleButtonClick('/schedule-a-call')}
                 color="inherit"
                 variant="outlined" // Set the variant to outlined
-                sx={{ mx: 2, borderColor: 'pink' }} // Set the border color to pink
+                sx={{ mx: 2, borderColor: 'pink', textTransform: 'capitalize' }} // Set the border color to pink
               >
                 Book a Chat
               </Button>
