@@ -85,10 +85,10 @@ function Footer() {
       <div className="footer-lower">
         <p>&copy; nuclecode {currentYear}</p>
         <a href="https://www.linkedin.com/company/nuclecode/" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin" style={{ color: '#000035', padding: '0 10px', fontSize: '24px' }}></i>
         </a>
         <a href="https://www.facebook.com/nuclecode/" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook"></i>
+          <i className="fab fa-facebook" style={{ color: '#000035', padding: '0 10px', fontSize: '24px' }}></i>
         </a>
       </div>
       <style jsx>{`
