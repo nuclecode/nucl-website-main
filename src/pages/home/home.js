@@ -9,7 +9,7 @@ function Home () {
     return (
 		<div className="home-page-container page-top-space">
 			<div className="container relative">
-				<img src={SpiralImage} className="spiral-image" alt="spiral image" />
+				<img src={SpiralImage} className="spiral-image" alt="spiral" />
 
 				<Typography variant="h1">The future of your website secured</Typography>
 					
