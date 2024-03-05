@@ -16,6 +16,7 @@
 		line-height: 32px;
 		letter-spacing: 0.25px;
 		text-transform: capitalize;
+		margin-bottom: $spacing-2x;
 	
 		@media (min-width: $breakpoint-md-down) {
 			font-size: 36px;

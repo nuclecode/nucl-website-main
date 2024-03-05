@@ -1,10 +1,6 @@
 @import '../../styles/variables.scss';
 
 .home-page-container {
-	section {
-		margin-bottom: $spacing-5x;
-	}
-
 	.spiral-image {
 		position: absolute;
 		top: 40px;
@@ -13,25 +9,16 @@
 	}
 
 	.subtitle {
-		margin-top: $spacing-1x;
 		padding-right: 100px;
 	}
 
 	.book-a-chat-button-container {
-		margin-top: $spacing-5x;
-		margin-bottom: $spacing-5x;
-
 		.book-a-chat-button {
 			font-size: 18px;
 			padding: 12px $spacing-3x 10px;
 		}
 	}
 
-	.ready-to-start-container {
-		.MuiCard-root {
-			background-color: rgba(240, 100, 34, 0.2);
-		}
-	}
 	
 
 
@@ -44,16 +31,6 @@
 
 		.subtitle {
 			padding-right: 150px;
-		}
-	}
-
-	@media (min-width: $breakpoint-md-down) {
-		.our-services-container {
-			.MuiCardContent-root {
-				.MuiTypography-body1 {
-					height: 80px;
-				}
-			}
 		}
 	}
 }

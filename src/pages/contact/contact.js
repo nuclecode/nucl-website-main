@@ -1,6 +1,6 @@
 import React from 'react';
-import { Typography, Button } from '@mui/material';
-import Card from '../../components/card/card';
+import { Typography } from '@mui/material';
+import ReadyToStart from '../../components/readyToStart/readyToStart';
 
 import './contact.scss';
 
@@ -10,43 +10,31 @@ function Contact() {
 			<div className="container relative">
 				<Typography variant="h1">Contact</Typography>
 
-				<Typography variant="subtitle1" className="subtitle">
-					Need us? We are always a phone call away!
-				</Typography>
+				<pageSection>
+					<Typography variant="subtitle1" className="subtitle">
+						Need us? We are always a phone call away!
+					</Typography>
+				</pageSection>
 
-				<section>
+				<pageSection>
 					<Typography variant="h2">Email Us</Typography>
 
-					<div className="tm-by3">
+					<div className="tm-by1">
 						<a href="mailto:hire@nuclecode.uk">hire@nuclecode.uk</a>
 					</div>
-				</section>
+				</pageSection>
 
-				<section>
+				<pageSection>
 					<Typography variant="h2">Call Us</Typography>
 
-					<div className="tm-by3">
+					<div className="tm-by1">
 						<a href="tel:+4407355573823">+44 (0) 7355 573 823</a>
 					</div>
-				</section>
+				</pageSection>
 
-				<section>
-					<Typography variant="h2">Ready to start a project?</Typography>
-
-					<div className="ready-to-start-container tm-by3">
-						<Card>
-							<Typography variant="body1">
-								Have a project in mind or need help with an existing one?
-							</Typography>
-
-							<div className="tm-by2">
-								<a href="/schedule-a-call">
-									<Button className="book-a-chat-button">Book a Chat</Button>
-								</a>
-							</div>
-						</Card>
-					</div>
-				</section>
+				<pageSection>
+					<ReadyToStart />
+				</pageSection>
 			</div>
 		</div>
 	);

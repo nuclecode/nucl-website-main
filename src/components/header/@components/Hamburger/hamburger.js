@@ -40,7 +40,7 @@ function Hamburger() {
                 <Divider />
                 
 				<div className="hamburger-drawer-container">
-					<ul>
+					<ul className="hide-bullets">
 						<a href="/">
 							<li>Home</li>
 						</a>

@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.our-services-container {
+	
+
+	@media (min-width: $breakpoint-md-down) {
+		.content-container {
+			.MuiCardContent-root {
+				.MuiTypography-body1 {
+					height: 80px;
+				}
+			}
+		}
+	}
+}
