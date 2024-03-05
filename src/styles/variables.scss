@@ -1,0 +1,43 @@
+@import 'spacing.scss';
+
+$site-default-font-family: "Coustard", serif;
+$site-alt-font-family: 'Tenor Sans', sans-serif;
+$site-default-font-size: 16px;
+$site-default-mobile-font-size: 14px;
+$site-regular: 400;
+$site-bold: 900;
+$material-icons: 'Material Icons';
+
+// common colors
+$site-text-color: #424242;
+$site-headline-color: #212121;
+$site-background-color: #fcf9fd;
+
+$link-color: #f06422;
+$link-color-hover: #f9992c;
+$link-color-focus: #f9992c;
+$link-color-active: #dc531e;
+
+// buttons
+$button-color: rgb(240, 100, 34);
+$button-contained-color-hover: #f9992c;
+$button-contained-color-focus: #f9992c;
+$button-outlined-color-hover: transparent;
+$button-outlined-color-focus: transparent;
+$button-outlined-border-color-hover: #f9992c;
+$button-outlined-border-color-focus: #f9992c;
+$button-text-color-hover: #f9992c;
+$button-text-color-focus: #f9992c;
+$button-outlined-border-color-active: #dc531e;
+$button-background-color-inactive: #f5f5f5;
+$button-background-color-disabled: #bdbdbd;
+$button-color-disabled: #757575;
+
+// responsive breakpoints
+$breakpoint-xs-down: 320px;
+$breakpoint-xs-up: 599px;
+$breakpoint-sm-down: 600px;
+$breakpoint-sm-up: 899px;
+$breakpoint-md-down: 900px;
+
+$error-color: red;
