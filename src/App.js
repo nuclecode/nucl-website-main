@@ -10,6 +10,7 @@ import EnquiryForm from './pages/enquiryForm/enquiryForm';
 import Frontend from './pages/solutions/frontend/frontend';
 import Backend from './pages/solutions/backend/backend';
 import Testing from './pages/solutions/testing/testing';
+import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
 
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
@@ -38,6 +39,9 @@ function App() {
 					<Route path="/case2" element={<Case2 />} />
 					<Route path="/case3" element={<Case3 />} />
 				</Routes> */}
+				<Routes>
+					<Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+				</Routes>
 				<Footer />
 			</Router>
 		</div>

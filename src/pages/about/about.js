@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Button } from '@mui/material';
+import { Typography } from '@mui/material';
 import Card from '../../components/card/card';
 import ReadyToStart from '../../components/readyToStart/readyToStart';
 
