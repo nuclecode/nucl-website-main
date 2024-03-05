@@ -32,7 +32,12 @@ body {
 }
 
 .page-top-space {
-	padding-top: 100px; //needed to allocate for fixed header
+	padding-top: 90px; //needed to allocate for fixed header
+}
+
+pageSection {
+	display: block;
+	margin-bottom: $spacing-5x;
 }
 
 a,

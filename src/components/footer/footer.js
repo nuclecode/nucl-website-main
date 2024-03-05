@@ -57,9 +57,9 @@ function Footer() {
 						</div>
 						
 						<ul className="hide-bullets">
-							<li><a href="/frontend">Front End</a></li>
-							<li><a href="/backend">Back End</a></li>
-							<li><a href="/software-testing">Software Testing</a></li>
+							<li><a href="/solutions/frontend">Front End</a></li>
+							<li><a href="/solutions/backend">Back End</a></li>
+							<li><a href="/solutions/testing">Software Testing</a></li>
 						</ul>
 					</item>
 
