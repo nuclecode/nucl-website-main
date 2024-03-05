@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import TextField from '@mui/material/TextField';
 import { Button, Typography } from '@mui/material';
-// import { db } from '../../firebaseConfig';
-// import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { db } from '../../firebaseConfig';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import './footer.scss';
+import { initializeApp } from "firebase/app";
 
 function Footer() {
 	const currentYear = new Date().getFullYear();
@@ -16,13 +17,14 @@ function Footer() {
 	const submitHandler = async (e) => {
 		e.preventDefault();
 
-		// await addDoc(collection(db, source), {
-		// 	email: emailInput,
-		// 	timestamp: serverTimestamp()
-		// }).then(() => {
-		// 	setEmailInput("");
-		// }).catch((error) => {
-		// });
+		await addDoc(collection(db, 'newsletter-emails'), {
+			email: emailInput,
+			timestamp: serverTimestamp()
+		}).then(() => {
+			setEmailInput("");
+		}).catch((error) => {
+			console.error("failed db ", error);
+		});
 	};
 
 	return (
