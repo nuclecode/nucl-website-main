@@ -11,8 +11,13 @@ function Frontend() {
 
 				<pageSection>
 					<Typography variant="body1">
-						We specialize in creating engaging and user-friendly 
-						frontend interfaces.
+						Our frontend development team is dedicated
+						to bringing your ideas to life with captivating
+						user interfaces and engaging user experiences.
+						Using the latest tools and technologies,
+						we transform your design concepts into responsive, 
+						interactive websites that captivate and convert 
+						visitors into loyal customers.
 					</Typography>
 				</pageSection>
 			</div>

@@ -11,16 +11,21 @@ function Testing() {
 
 				<pageSection>
 					<Typography variant="body1">
-						Ensure the quality and reliability of your software 
-						with our comprehensive testing services.
+								Quality is paramount in everything we do,
+								which is why we offer comprehensive software
+								testing services to ensure that your website
+								performs flawlessly in every scenario. Our team
+								employs rigorous testing methodologies to identify 
+								and address any issues before they impact your users,
+								delivering a polished product that exceeds expectations.
 					</Typography>
 				</pageSection>
-
+{/* 
 				<ul>
 					<li>Android and iOS Testing</li>
 					<li>Website/PWA Testing</li>
 					<li>React App Testing</li>
-				</ul>
+				</ul> */}
 			</div>
 		</div>
 	);

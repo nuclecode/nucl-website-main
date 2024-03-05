@@ -11,8 +11,12 @@ function Backend() {
 
 				<pageSection>
 					<Typography variant="body1">
-						Our backend solutions are scalable, efficient, 
-						and tailored to your business needs.
+						Behind every great website is a powerful backend
+						infrastructure that drives performance and functionality.
+						Our backend development experts are masters at architecting
+						scalable, efficient systems that handle complex operations with
+						ease. From database design to server-side scripting, we ensure
+						that your website runs smoothly and securely, no matter the demands.
 					</Typography>
 				</pageSection>
 			</div>

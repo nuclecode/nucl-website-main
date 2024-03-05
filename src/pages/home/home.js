@@ -19,14 +19,16 @@ function Home () {
 				
 				<pageSection>
 					<Typography variant="subtitle1" className="subtitle">
-						Get secure and tested code to make your website less prone to exploits, 
-						with long-lasting effects
+						Get a secure and tested website to prolong the lifespan of your codebase.
+						With the latest industry best practices and decades of developing experience,
+						we deliver the results you come for.<br />
+						Interested? Let's schedule a video call!
 					</Typography>
 				</pageSection>
 
 				<pageSection className="book-a-chat-button-container">
 					<a href="/schedule-a-call">
-						<Button className="book-a-chat-button">Book a Chat</Button>
+						<Button className="book-a-chat-button">Book a Zoom call</Button>
 					</a>
 				</pageSection>
 

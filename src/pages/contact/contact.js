@@ -12,7 +12,7 @@ function Contact() {
 
 				<pageSection>
 					<Typography variant="subtitle1" className="subtitle">
-						Need us? We are always a phone call away!
+						How can we help you today?
 					</Typography>
 				</pageSection>
 
