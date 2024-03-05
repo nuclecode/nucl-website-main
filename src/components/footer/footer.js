@@ -4,7 +4,7 @@ import { Button, Typography } from '@mui/material';
 import { db } from '../../firebaseConfig';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import './footer.scss';
-import { initializeApp } from "firebase/app";
+
 
 function Footer() {
 	const currentYear = new Date().getFullYear();
