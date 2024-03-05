@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
-import '../App.css';
 
 
 function Portfolio ()

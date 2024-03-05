@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.card-container {
+	.MuiCardContent-root {
+		&:last-child {
+			padding-bottom: $spacing-2x;
+		}
+	}
+}

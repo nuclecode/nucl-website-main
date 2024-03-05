@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.about-page-container {
+	section {
+		margin-bottom: $spacing-5x;
+	}
+
+	.spiral-image {
+		position: absolute;
+		top: 40px;
+		right: $spacing-2x;
+		z-index: -1;
+	}
+
+	.subtitle {
+		margin-top: $spacing-1x;
+		margin-bottom: $spacing-5x;
+		padding-right: 100px;
+	}
+
+	.ready-to-start-container {
+		.MuiCard-root {
+			background-color: rgba(240, 100, 34, 0.2);
+		}
+	}
+
+
+
+
+	@media (min-width: $breakpoint-md-down) {
+		.spiral-image {
+			right: 50px;
+		}
+
+		.subtitle {
+			padding-right: 150px;
+		}
+	}
+
+	@media (min-width: $breakpoint-md-down) {
+		.our-services-container {
+			.MuiCardContent-root {
+				.MuiTypography-body1 {
+					height: 80px;
+				}
+			}
+		}
+	}
+}
