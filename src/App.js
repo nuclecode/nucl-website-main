@@ -11,6 +11,7 @@ import Frontend from './pages/solutions/frontend/frontend';
 import Backend from './pages/solutions/backend/backend';
 import Testing from './pages/solutions/testing/testing';
 import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
+import { Helmet } from 'react-helmet';
 
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
@@ -20,6 +21,17 @@ function App() {
 	return (
 		<div className="page-container">
 			<Router>
+				<Helmet>
+						<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5N4D8RK5M"></script>
+						<script>
+							{`
+								window.dataLayer = window.dataLayer || [];
+								function gtag(){dataLayer.push(arguments);}
+								gtag('js', new Date());
+								gtag('config', 'G-E5N4D8RK5M');
+							`}
+						</script>
+				</Helmet>
 				<Header />
 				<Routes>
 					<Route path="/" exact element={<Home />} />
