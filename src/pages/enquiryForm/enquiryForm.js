@@ -18,7 +18,7 @@ function EnquiryForm() {
 	return (
 		<div className="enquiry-form-container page-top-space">
 			<div className="container">
-				<Typography variant="h1">Book a Zoom call</Typography>
+				<Typography variant="h1">Book a call</Typography>
 
 				<div 
 					className="calendly-inline-widget" 
