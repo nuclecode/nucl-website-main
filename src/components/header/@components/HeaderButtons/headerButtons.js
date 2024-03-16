@@ -5,7 +5,7 @@ function HeaderButtons() {
 	return (
 		<div className="header-buttons-container">
 			<a href="/schedule-a-call">
-				<Button variant="outlined">Book a Zoom call</Button>
+				<Button variant="outlined">Book a call</Button>
 			</a>
 		</div>
 	);
