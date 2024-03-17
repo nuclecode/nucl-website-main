@@ -1,5 +1,5 @@
 import React, { useEffect }  from 'react';
-import { Typography, Grid } from '@mui/material';
+import { Typography } from '@mui/material';
 
 import './enquiryForm.scss';
 
@@ -22,7 +22,7 @@ function EnquiryForm() {
 
 				<section>
 					<Typography variant="h3">
-						Your business could sell online and make more profit!
+						Your business could sell online and make more profit
 					</Typography>
 				</section>
 
