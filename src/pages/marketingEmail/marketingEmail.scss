@@ -13,9 +13,13 @@
 	.book-a-call-container {
 		margin-top: $spacing-5x;
 
-		.book-a-call {
+		.book-a-call-button {
 			padding: 14px 40px 12px;
 			font-size: 18px;
+		}
+
+		.note {
+			margin-top: $spacing-1x;
 		}
 	}
 

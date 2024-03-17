@@ -26,9 +26,9 @@ function Home () {
 					</Typography>
 				</pageSection>
 
-				<pageSection className="book-a-chat-button-container">
+				<pageSection className="book-a-call-button-container">
 					<a href="/schedule-a-call">
-						<Button className="book-a-chat-button">Book a call</Button>
+						<Button className="book-a-call-button">Book a call</Button>
 					</a>
 				</pageSection>
 

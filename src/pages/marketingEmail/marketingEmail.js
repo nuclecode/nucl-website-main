@@ -22,32 +22,39 @@ function MarketingEmail() {
 					<Grid item xs={1} sm={2}>&#160;</Grid>
 					<Grid item xs={10} sm={8}>
 						<section className="tm-by3">
-							Did you know that you could have solid twice as many 
-							products as you did today if you were selling via your own website?
+							<Typography variant="body1">
+								Did you know that you could have solid twice as many 
+								products as you did today if you were selling via your 
+								own website?
+							</Typography>
 						</section>
 
 						<section>
-							What if you could avoid paying the commissions on delivery, 
-							service charges and much more to own your website?
+							<Typography variant="body1">
+								What if you could avoid paying the commissions on delivery, 
+								service charges and much more to own your website?
+							</Typography>
 						</section>
 
 						<section>
-							<div>Convinced?</div>
-							<div>Let's talk about your own business website.</div>
+							<Typography variant="body1">
+								<div>Convinced?</div>
+								<div>Let's talk about your own business website.</div>
+							</Typography>
 						</section>
 
 						<section>
-							Book a FREE consultation with nuclecode professionals now.
+							<Typography variant="body1">
+								Book a FREE consultation with nuclecode professionals now.
+							</Typography>
 						</section>
 
 						<section className="book-a-call-container">
 							<a href="/schedule-a-call">
-								<Button className="book-a-call">Book a call</Button>
+								<Button className="book-a-call-button">Book a call</Button>
 							</a>
-						</section>
 
-						<section>
-							<Typography variant="overline">
+							<Typography variant="overline" className="note">
 								*by proceeding, you are not charged nor bound by any contract
 							</Typography>
 						</section>
@@ -59,9 +66,11 @@ function MarketingEmail() {
 							</section>
 
 							<section>
-								nuclecode web experts specialize in crafting bespoke 
-								web solutions tailored to the unique needs and vision 
-								of your business.
+								<Typography variant="body1">
+									nuclecode web experts specialize in crafting bespoke 
+									web solutions tailored to the unique needs and vision 
+									of your business.
+								</Typography>
 							</section>
 
 							<section>
