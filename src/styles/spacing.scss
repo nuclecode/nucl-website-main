@@ -6,6 +6,15 @@ $spacing-3x: 24px;
 $spacing-4x: 32px;
 $spacing-5x: 40px;
 
+.page-top-space {
+	padding-top: 90px; //needed to allocate for fixed header
+}
+
+pageSection {
+	display: block;
+	margin-bottom: $spacing-5x;
+}
+
 section,
 div {
     &.tm-by-half {

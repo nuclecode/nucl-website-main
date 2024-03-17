@@ -1,5 +1,5 @@
 import React, { useEffect }  from 'react';
-import { Typography } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 
 import './enquiryForm.scss';
 
@@ -20,13 +20,27 @@ function EnquiryForm() {
 			<div className="container">
 				<Typography variant="h1">Book a call</Typography>
 
-				<pageSection>
-					<Typography variant="subtitle1" className="subtitle">
-					Nuclecode web experts specialize in crafting bespoke 
-					web solutions tailored to the unique needs and vision of 
-					your business.
+				<section>
+					<Typography variant="h3">
+						Your business could sell online and make more profit!
 					</Typography>
-				</pageSection>
+				</section>
+
+				<section>
+					Did you know that you could have solid twice as many 
+					products as you did today if you were selling via your own website?
+				</section>
+
+				<section>
+					What if you could avoid paying the commissions on delivery, 
+					service charges and much more to own your website?
+				</section>
+
+				<section>
+					Convinced? 
+					Let's talk. Book a FREE consultation with 
+					nuclecode professionals now.
+				</section>
 
 				<div 
 					className="calendly-inline-widget" 
