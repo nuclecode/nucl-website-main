@@ -16,7 +16,7 @@ function ReadyToStart() {
 
 					<div className="tm-by2">
 						<a href="/schedule-a-call">
-							<Button className="book-a-chat-button">Book a call</Button>
+							<Button>Book a call</Button>
 						</a>
 					</div>
 				</Card>

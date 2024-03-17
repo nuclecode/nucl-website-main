@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.sell-online-container {
+	background-color: #fdf9fd;
+	padding-top: $spacing-2x;
+	padding-bottom: $spacing-2x;
+	text-align: center;
+
+	.logo-container {
+		margin-bottom: $spacing-5x;
+	}
+
+	.book-a-call-container {
+		margin-top: $spacing-5x;
+
+		.book-a-call-button {
+			padding: 14px 40px 12px;
+			font-size: 18px;
+		}
+
+		.note {
+			margin-top: $spacing-1x;
+		}
+	}
+
+	.about-section-container {
+		margin-top: 60px;
+
+		.spiral-image {
+			width: 60px;
+			height: auto;
+		}
+	}
+
+	.social-media-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: $spacing-5x;
+
+		.social-media {
+			display: flex;
+			gap: $spacing-2x;
+
+			.fab {
+				font-size: 24px;
+				color: $site-text-color;
+			}
+		}
+	}
+
+	hr {
+		margin-top: $spacing-2x;
+		margin-bottom: $spacing-2x;
+		border-color: $site-background-color;
+	}
+
+	.bottom-links-container {
+		margin-top: $spacing-5x;
+
+		div {
+			display: inline-block;
+			margin-right: $spacing-2x;
+		}
+	}
+}

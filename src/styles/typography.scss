@@ -107,12 +107,12 @@
 		@include typographyButton();
 	}
 	
-	// &.MuiTypography-overline {
-	// 	font-family: $site-default-font-family;
-	// 	font-size: 12px;
-	// 	font-weight: $site-bold;
-	// 	line-height: 16px;
-	// 	letter-spacing: 1.5px;
-	// 	text-transform: uppercase;
-	// }
+	&.MuiTypography-overline {
+		font-family: $site-default-font-family;
+		font-size: 12px;
+		font-weight: $site-regular;
+		line-height: 18px;
+		letter-spacing: 0.5px;
+		text-transform: lowercase;
+	}
 }
