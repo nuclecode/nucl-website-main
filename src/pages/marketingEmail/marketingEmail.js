@@ -11,11 +11,13 @@ function MarketingEmail() {
 		<div className="sell-online-container">
 			<div className="container">
 				<div className="logo-container">
-					<LogoImage />
+					<a href="/">
+						<LogoImage />
+					</a>
 				</div>
 
 				<Typography variant="h1">
-					Your business could sell online and make more profit!
+					Your business could sell online and make more profit
 				</Typography>
 
 				<Grid container>
