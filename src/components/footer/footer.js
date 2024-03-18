@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import TextField from '@mui/material/TextField';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, TextField } from '@mui/material';
 import { db } from '../../firebaseConfig';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+
 import './footer.scss';
 
 
@@ -45,8 +45,8 @@ function Footer() {
 						<Button type="submit">Sign me up</Button>
 					</form>
 
-					<Typography variant="caption">
-						By signing up to nuclecode tech newsletter, 
+					<Typography variant="overline">
+						*by signing up to nuclecode tech newsletter, 
 						you agree to the &#160;
 						<a href="/terms-and-conditions">terms and conditions</a>
 					</Typography>
