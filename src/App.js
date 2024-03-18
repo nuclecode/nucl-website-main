@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
 import Home from './pages/home/home';
 import Solutions from './pages/solutions/solutions';
 import About from './pages/about/about';
@@ -19,10 +17,9 @@ import { Helmet } from 'react-helmet';
 // import Case3 from './components/case-studies/Case3';
 
 function App() {
-	const isMarketingPage = window.location.pathname === "/sell-online";
 
 	return (
-		<>
+        <>
 			<Helmet>
 				<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5N4D8RK5M"></script>
 				<script>
@@ -35,38 +32,32 @@ function App() {
 				</script>
 			</Helmet>
 
-			<div className="page-container">
-				{!isMarketingPage && <Header />}
-
-				<Router>
-					<Routes>
-						<Route path="/" exact element={<Home />} />
-						{/* <Route path="/portfolio" element={<Portfolio />} /> */}
-						<Route path="/solutions" element={<Solutions />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="/schedule-a-call" element={<EnquiryForm />} />
-					</Routes>
-					<Routes>
-						<Route path="/solutions/frontend" element={<Frontend />} />
-						<Route path="/solutions/backend" element={<Backend />} />
-						<Route path="/solutions/testing" element={<Testing />} />
-					</Routes>
-					{/* <Routes>
-						<Route path="/case1" element={<Case1 />} />
-						<Route path="/case2" element={<Case2 />} />
-						<Route path="/case3" element={<Case3 />} />
-					</Routes> */}
-					<Routes>
-						<Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-					</Routes>
-					<Routes>
-						<Route path="/sell-online" element={<MarketingEmail />} />
-					</Routes>
-				</Router>
-
-				{!isMarketingPage && <Footer />}
-			</div>
+			<Router>
+				<Routes>
+					<Route path="/" exact element={<Home />} />
+					{/* <Route path="/portfolio" element={<Portfolio />} /> */}
+					<Route path="/solutions" element={<Solutions />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/schedule-a-call" element={<EnquiryForm />} />
+				</Routes>
+				<Routes>
+					<Route path="/solutions/frontend" element={<Frontend />} />
+					<Route path="/solutions/backend" element={<Backend />} />
+					<Route path="/solutions/testing" element={<Testing />} />
+				</Routes>
+				{/* <Routes>
+					<Route path="/case1" element={<Case1 />} />
+					<Route path="/case2" element={<Case2 />} />
+					<Route path="/case3" element={<Case3 />} />
+				</Routes> */}
+				<Routes>
+					<Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+				</Routes>
+				<Routes>
+					<Route path="/sell-online" element={<MarketingEmail />} />
+				</Routes>
+			</Router>
 		</>
 	);
 }
