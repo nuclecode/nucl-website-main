@@ -52,7 +52,7 @@ function Footer() {
 					</Typography>
 				</div>
 
-				<div className="grid-container">
+				<Typography variant="overline" className="grid-container">
 					<div className="item">
 						<div className="footer-section-title">
 							Solutions
@@ -76,7 +76,7 @@ function Footer() {
 							<li><a href="/terms-and-conditions">Terms and Conditions</a></li>
 						</ul>
 					</div>
-				</div>
+				</Typography>
 
 				<div className="social-media-container">
 					&copy; nuclecode {currentYear}
