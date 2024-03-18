@@ -6,7 +6,7 @@ import './aboutNuclecode.scss';
 function AboutNuclecode() {
 	return (
 		<div className="about-nuclecode-container">
-			<Typography variant="h2">About Nuclecode</Typography>
+			<Typography variant="h2">About nuclecode</Typography>
 
 			<div className="tm-by3">
 				<Card>

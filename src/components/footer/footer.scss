@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .footer-container {
-	margin-top: $spacing-5x;
+	margin-top: 60px;
 	margin-bottom: $spacing-3x;
 
 	.newsletter-container {
@@ -24,12 +24,10 @@
 
 	.grid-container {
 		display: flex;
-		justify-content: center;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: space-between;
 
 		.item {
-			font-size: 14px;
-
 			a {
 				color: inherit;
 			}
@@ -65,13 +63,13 @@
 
 	@media (min-width: $breakpoint-sm-down) {
 		.grid-container {
-			flex-direction: row;
-			gap: 100px;
+			justify-content: center;
+			gap: 200px;
 		}
 
 		.social-media-container {
 			justify-content: center;
-			gap: 200px;
+			gap: 40px;
 		}
 
 		.newsletter-container {
@@ -83,14 +81,10 @@
 		}
 	}
 
-	@media (min-width: $breakpoint-md-down) {
-		.grid-container {
-			gap: 200px;
-		}
-	}
-
 	@media (max-width: $breakpoint-xs-up) {
 		.grid-container {
+			gap: 50px;
+
 			.item {
 				margin-bottom: $spacing-2x;
 			}

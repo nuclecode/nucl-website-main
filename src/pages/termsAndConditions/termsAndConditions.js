@@ -7,11 +7,11 @@ function TermsAndConditions() {
 			<div className="terms-and-conditions-container page-top-space">
 				<div className="container">
 					<Typography variant="h1">
-						Nuclecode Terms And Conditions
+						nuclecode Terms And Conditions
 					</Typography>
 
 					<section>
-						Welcome to Nuclecode! These terms and conditions outline 
+						Welcome to nuclecode! These terms and conditions outline 
 						the rules and regulations for the use of our website and 
 						services, including web development, design, and related offerings.
 					</section>
@@ -19,7 +19,7 @@ function TermsAndConditions() {
 					<section>
 						By accessing this website or using our services, you accept 
 						these terms and conditions in full. Do not continue to use 
-						Nuclecode's website or services if you do not accept 
+						nuclecode's website or services if you do not accept 
 						all of the terms and conditions stated on this page.
 					</section>
 
@@ -30,13 +30,13 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								"Nuclecode," "we," "us," or "our" refers to Nuclecode Ltd., 
+								"nuclecode," "we," "us," or "our" refers to nuclecode Ltd., 
 								a web development company registered in the United Kingdom 
 								under company number 15061644.
 							</li>
 							<li>
 								"You" refers to the user or client engaging with 
-								Nuclecode's website or services.
+								nuclecode's website or services.
 							</li>
 						</ul>
 					</section>
@@ -48,7 +48,7 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								Nuclecode provides web development, design, and 
+								nuclecode provides web development, design, and 
 								related services to clients worldwide.
 							</li>
 							<li>
@@ -65,7 +65,7 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								Fees for Nuclecode's services are determined 
+								Fees for nuclecode's services are determined 
 								based on the scope of the project and are 
 								outlined in the project proposal or contract.
 							</li>
@@ -87,13 +87,13 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								Nuclecode retains intellectual property rights 
+								nuclecode retains intellectual property rights 
 								to all code, designs, and materials developed 
 								as part of our services, unless otherwise agreed upon in writing.
 							</li>
 							<li>
 								Clients are granted a non-exclusive license to use 
-								the deliverables provided by Nuclecode for their intended purposes.
+								the deliverables provided by nuclecode for their intended purposes.
 							</li>
 						</ul>
 					</section>
@@ -105,13 +105,13 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								Nuclecode respects the confidentiality of our clients' 
+								nuclecode respects the confidentiality of our clients' 
 								information and will not disclose any confidential 
 								information without prior consent.
 							</li>
 							<li>
 								Clients agree to keep confidential any proprietary 
-								information shared by Nuclecode during the course of the project.
+								information shared by nuclecode during the course of the project.
 							</li>
 						</ul>
 					</section>
@@ -123,7 +123,7 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								Nuclecode is not liable for any damages, including but not 
+								nuclecode is not liable for any damages, including but not 
 								limited to loss of data, revenue, or profits, arising 
 								from the use of our services.
 							</li>
@@ -172,7 +172,7 @@ function TermsAndConditions() {
 					</section>
 
 					<section>
-						By using Nuclecode's website or services, you acknowledge 
+						By using nuclecode's website or services, you acknowledge 
 						that you have read, understood, and agree to these terms 
 						and conditions. If you have any questions or concerns, 
 						please contact us at legal@nuclecode.com.

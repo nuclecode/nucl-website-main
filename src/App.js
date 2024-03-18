@@ -5,6 +5,7 @@ import Solutions from './pages/solutions/solutions';
 import About from './pages/about/about';
 import Contact from './pages/contact/contact';
 import EnquiryForm from './pages/enquiryForm/enquiryForm';
+import ContactCustomersForm from './pages/contactCustomersForm/contactCustomersForm';
 import Frontend from './pages/solutions/frontend/frontend';
 import Backend from './pages/solutions/backend/backend';
 import Testing from './pages/solutions/testing/testing';
@@ -40,6 +41,7 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/schedule-a-call" element={<EnquiryForm />} />
+					<Route path="/have-us-call-you" element={<ContactCustomersForm />} />
 				</Routes>
 				<Routes>
 					<Route path="/solutions/frontend" element={<Frontend />} />

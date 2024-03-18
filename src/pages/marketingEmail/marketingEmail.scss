@@ -13,9 +13,16 @@
 	.book-a-call-container {
 		margin-top: $spacing-5x;
 
-		.book-a-call-button {
-			padding: 14px 40px 12px;
-			font-size: 18px;
+		.buttons-container {
+			display: flex;
+			flex-direction: column;
+			gap: $spacing-2x;
+			justify-content: center;
+
+			.book-a-call-button {
+				padding: 14px 40px 12px;
+				font-size: 18px;
+			}
 		}
 
 		.note {
@@ -61,6 +68,16 @@
 		div {
 			display: inline-block;
 			margin-right: $spacing-2x;
+		}
+	}
+
+
+
+	@media (min-width: $breakpoint-sm-down) {
+		.book-a-call-container {
+			.buttons-container {
+				flex-direction: row;
+			}
 		}
 	}
 }

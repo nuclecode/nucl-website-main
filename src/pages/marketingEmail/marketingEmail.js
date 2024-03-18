@@ -24,11 +24,11 @@ function MarketingEmail() {
 					</Typography>
 
 					<Grid container>
-						<Grid item xs={1} sm={2}>&#160;</Grid>
-						<Grid item xs={10} sm={8}>
+						<Grid item xs={1} md={2}>&#160;</Grid>
+						<Grid item xs={10} md={8}>
 							<section className="tm-by3">
 								<Typography variant="body1">
-									Did you know that you could have solid twice as many 
+									Did you know that you could have sold twice as many 
 									products as you did today if you were selling via your 
 									own website?
 								</Typography>
@@ -43,21 +43,31 @@ function MarketingEmail() {
 
 							<section>
 								<Typography variant="body1">
-									<div>Convinced?</div>
-									<div>Let's talk about your own business website.</div>
+									Convinced? Let's talk about your own business website.
 								</Typography>
 							</section>
 
 							<section>
 								<Typography variant="body1">
-									Book a FREE consultation with nuclecode professionals now.
+									<div>
+										Book a FREE consultation with nuclecode professionals now.
+									</div>
+									<div>
+										OR, if you prefer, we can call you.
+									</div>
 								</Typography>
 							</section>
 
 							<section className="book-a-call-container">
-								<a href="/schedule-a-call">
-									<Button className="book-a-call-button">Book a call</Button>
-								</a>
+								<div className="buttons-container">
+									<a href="/schedule-a-call">
+										<Button className="book-a-call-button">Book a call</Button>
+									</a>
+
+									<a href="/have-us-call-you">
+										<Button className="book-a-call-button">Have us call you</Button>
+									</a>
+								</div>
 
 								<Typography variant="overline" className="note">
 									*by proceeding, you are not charged nor bound by any contract
@@ -109,7 +119,7 @@ function MarketingEmail() {
 								</Typography>
 							</section>
 						</Grid>
-						<Grid item xs={1} sm={2}>&#160;</Grid>
+						<Grid item xs={1} md={2}>&#160;</Grid>
 					</Grid>
 
 					<section className="bottom-links-container">

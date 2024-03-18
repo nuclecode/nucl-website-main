@@ -29,19 +29,25 @@ function EnquiryForm() {
 					</section>
 
 					<section>
-						Did you know that you could have solid twice as many 
-						products as you did today if you were selling via your own website?
+						<Typography variant="body1">
+							Did you know that you could have sold twice as many 
+							products as you did today if you were selling via your 
+							own website?
+						</Typography>
 					</section>
 
 					<section>
-						What if you could avoid paying the commissions on delivery, 
-						service charges and much more to own your website?
+						<Typography variant="body1">
+							What if you could avoid paying the commissions on delivery, 
+							service charges and much more to own your website?
+						</Typography>
 					</section>
 
 					<section>
-						Convinced? 
-						Let's talk. Book a FREE consultation with 
-						nuclecode professionals now.
+						<Typography variant="body1">
+							Let's talk. Book a FREE consultation with 
+							nuclecode professionals now.
+						</Typography>
 					</section>
 
 					<div 

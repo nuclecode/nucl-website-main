@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.contact-customers-form-container {
+	.form-container {
+		margin-top: $spacing-2x;
+		margin-bottom: $spacing-2x;
+		display: flex;
+		flex-direction: column;
+		gap: $spacing-2x;
+
+		.phone-number-field {
+			input {
+				width: 280px;
+				height: 45px;
+			}
+		}
+
+		.button-container {
+			.call-me-button {
+				padding: 12px 40px 10px;
+				margin-right: $spacing-2x;
+
+				&:hover,
+				&:focus,
+				&:active {
+					background-color: $button-color;
+				}
+			}
+
+			.successfully-submitted-container {
+				display: inline-flex;
+				vertical-align: top;
+				margin-top: 10px;
+				gap: $spacing-1x;
+				font-size: 14px;
+				color: #0c990c;
+
+				.fa-thumbs-up {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+
+
+	@media (min-width: $breakpoint-md-down) {
+		.form-container {
+			.button-container {
+				.call-me-button {
+					padding: 12px 60px 10px;
+				}
+			}
+		}
+
+		.button-container {
+			.successfully-submitted-container {
+				font-size: 16px;
+
+				.fa-thumbs-up {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-sm-down) {
+		.alert {
+			width: 360px;
+		}
+	}
+
+	@media (max-width: $breakpoint-xs-up) {
+		.alert {
+			width: 90%;
+		}
+	}
+}
