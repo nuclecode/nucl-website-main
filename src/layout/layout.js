@@ -4,10 +4,10 @@ import MinimalHeader from '../components/header/minimalHeader';
 import Footer from '../components/footer/footer';
 
 const PageHeader = ({header}) => {
-	if (header == HeaderType.Minimal) {
+	if (header === HeaderType.Minimal) {
 		return <MinimalHeader />;
 	}
-	else if (header == HeaderType.None) {
+	else if (header === HeaderType.None) {
 		return <></>;
 	}
 	else {
@@ -16,7 +16,7 @@ const PageHeader = ({header}) => {
 };
 
 const PageFooter = ({footer}) => {
-	if (footer == FooterType.None) {
+	if (footer === FooterType.None) {
 		return <></>;
 	}
 	else {
