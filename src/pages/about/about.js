@@ -15,7 +15,7 @@ function About () {
 
 					<page-section>
 						<Typography variant="subtitle1" className="subtitle">
-							Nuclecode web experts specialize in crafting bespoke 
+							nuclecode web experts specialize in crafting bespoke 
 							web solutions tailored to the unique needs and vision of 
 							your business.
 						</Typography>
@@ -27,7 +27,7 @@ function About () {
 						<div className="tm-by3">
 							<Card>
 								<Typography variant="body1">
-									At Nuclecode, our mission is to deliver secure, scalable, 
+									At nuclecode, our mission is to deliver secure, scalable, 
 									and easy-to-maintain code. We are dedicated to empowering 
 									businesses with innovative digital solutions that not only 
 									drive growth and success but also ensure the reliability and 
@@ -47,7 +47,7 @@ function About () {
 							<Card>
 								<Typography variant="body1">
 									<section>
-										At Nuclecode, we believe that a systematic approach 
+										At nuclecode, we believe that a systematic approach 
 										is key to delivering exceptional results. Our methodology 
 										is built on years of experience and a commitment to 
 										excellence, ensuring that every project we undertake 
@@ -110,7 +110,7 @@ function About () {
 					</page-section>
 
 					<page-section>
-						<Typography variant="h2">Why Nuclecode?</Typography>
+						<Typography variant="h2">Why nuclecode?</Typography>
 
 						<div className="tm-by3">
 							<Card>
