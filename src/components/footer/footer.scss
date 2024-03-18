@@ -27,8 +27,7 @@
 		justify-content: center;
 		flex-direction: column;
 
-		item {
-			display: block;
+		.item {
 			font-size: 14px;
 
 			a {
@@ -92,7 +91,7 @@
 
 	@media (max-width: $breakpoint-xs-up) {
 		.grid-container {
-			item {
+			.item {
 				margin-bottom: $spacing-2x;
 			}
 		}

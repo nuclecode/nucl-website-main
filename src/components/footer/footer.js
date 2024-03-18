@@ -53,7 +53,7 @@ function Footer() {
 				</div>
 
 				<div className="grid-container">
-					<item>
+					<div className="item">
 						<div className="footer-section-title">
 							Solutions
 						</div>
@@ -63,9 +63,9 @@ function Footer() {
 							<li><a href="/solutions/backend">Back End</a></li>
 							<li><a href="/solutions/testing">Software Testing</a></li>
 						</ul>
-					</item>
+					</div>
 
-					<item>
+					<div className="item">
 						<div className="footer-section-title">
 							Company
 						</div>
@@ -73,8 +73,9 @@ function Footer() {
 						<ul className="hide-bullets">
 							<li><a href="/about">About</a></li>
 							<li><a href="/contact">Contact</a></li>
+							<li><a href="/terms-and-conditions">Terms and Conditions</a></li>
 						</ul>
-					</item>
+					</div>
 				</div>
 
 				<div className="social-media-container">

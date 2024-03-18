@@ -10,34 +10,34 @@ $spacing-5x: 40px;
 	padding-top: 90px; //needed to allocate for fixed header
 }
 
-pageSection {
+page-section {
 	display: block;
 	margin-bottom: $spacing-5x;
 }
 
 section,
 div {
-    &.tm-by-half {
-        margin-top: $spacing-half-x;
-    }
+	&.tm-by-half {
+		margin-top: $spacing-half-x;
+	}
 
-    &.tm-by1 {
-        margin-top: $spacing-1x;
-    }
+	&.tm-by1 {
+		margin-top: $spacing-1x;
+	}
 
-    &.tm-by2 {
-        margin-top: $spacing-2x;
-    }
+	&.tm-by2 {
+		margin-top: $spacing-2x;
+	}
 
-    &.tm-by3 {
-        margin-top: $spacing-3x;
-    }
+	&.tm-by3 {
+		margin-top: $spacing-3x;
+	}
 
-    &.tm-by4 {
-        margin-top: $spacing-4x;
-    }
+	&.tm-by4 {
+		margin-top: $spacing-4x;
+	}
 
-    &.tm-by5 {
-        margin-top: $spacing-5x;
-    }
+	&.tm-by5 {
+		margin-top: $spacing-5x;
+	}
 }

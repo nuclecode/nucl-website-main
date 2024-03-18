@@ -1,19 +1,18 @@
 @import '../../../../styles/variables.scss';
 
-.header-desktop-menu-container{ 
+.header-desktop-menu-container {
 	display: flex;
 	justify-content: center;
 	gap: $spacing-5x;
 
-	item {
-		display: block;
+	.item {
 		position: relative;
 
 		a {
 			color: $site-text-color;
 			font-weight: $site-regular;
 			text-decoration: none;
-	
+
 			&:hover {
 				&:after {
 					content: ' ';
