@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../layout/layout';
 import { Typography } from '@mui/material';
 import ReadyToStart from '../../components/readyToStart/readyToStart';
+import ContactCustomersForm from '../../components/contactCustomersForm/contactCustomersForm';
 
 import './contact.scss';
 
@@ -31,6 +32,14 @@ function Contact() {
 
 						<div className="tm-by1">
 							<a href="tel:+4407355573823">+44 (0) 7355 573 823</a>
+						</div>
+					</page-section>
+
+					<page-section>
+						<Typography variant="h2">Have us call you</Typography>
+
+						<div className="tm-by1">
+							<ContactCustomersForm />
 						</div>
 					</page-section>
 
