@@ -1,28 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
-import Home from './pages/home/home';
-import Solutions from './pages/solutions/solutions';
-import About from './pages/about/about';
-import Contact from './pages/contact/contact';
-import EnquiryForm from './pages/enquiryForm/enquiryForm';
-import HaveUsCallYou from './pages/haveUsCallYou/haveUsCallYou';
-import Frontend from './pages/solutions/frontend/frontend';
-import Backend from './pages/solutions/backend/backend';
-import Testing from './pages/solutions/testing/testing';
-import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
-import MarketingEmail from './pages/marketingEmail/marketingEmail';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/home";
+import Solutions from "./pages/solutions/solutions";
+// import About from './pages/about/about';
+import Contact from "./pages/contact/contact";
+import EnquiryForm from "./pages/enquiryForm/enquiryForm";
+import HaveUsCallYou from "./pages/haveUsCallYou/haveUsCallYou";
+import Frontend from "./pages/solutions/frontend/frontend";
+import Backend from "./pages/solutions/backend/backend";
+import Testing from "./pages/solutions/testing/testing";
+import TermsAndConditions from "./pages/termsAndConditions/termsAndConditions";
+import MarketingEmail from "./pages/marketingEmail/marketingEmail";
+import PayDeposit from "./pages/payDeposit/payDeposit";
+import { Helmet } from "react-helmet";
 
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
 // import Case3 from './components/case-studies/Case3';
 
 function App() {
-
 	return (
-        <>
+		<>
 			<Helmet>
-				<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5N4D8RK5M"></script>
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-E5N4D8RK5M"
+				></script>
 				<script>
 					{`
 						window.dataLayer = window.dataLayer || [];
@@ -38,10 +41,14 @@ function App() {
 					<Route path="/" exact element={<Home />} />
 					{/* <Route path="/portfolio" element={<Portfolio />} /> */}
 					<Route path="/solutions" element={<Solutions />} />
-					<Route path="/about" element={<About />} />
+					{/* <Route path="/about" element={<About />} /> */}
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/pay-deposit" element={<PayDeposit />} />
 					<Route path="/schedule-a-call" element={<EnquiryForm />} />
-					<Route path="/have-us-call-you" element={<HaveUsCallYou />} />
+					<Route
+						path="/have-us-call-you"
+						element={<HaveUsCallYou />}
+					/>
 				</Routes>
 				<Routes>
 					<Route path="/solutions/frontend" element={<Frontend />} />
@@ -54,7 +61,10 @@ function App() {
 					<Route path="/case3" element={<Case3 />} />
 				</Routes> */}
 				<Routes>
-					<Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+					<Route
+						path="/terms-and-conditions"
+						element={<TermsAndConditions />}
+					/>
 				</Routes>
 				<Routes>
 					<Route path="/sell-online" element={<MarketingEmail />} />
