@@ -4,7 +4,7 @@ import './logo.scss';
 function Logo() {
 	return (
 		<div className="header-logo-container">
-			<a href="/">
+			<a href="/" aria-label="logo">
 				<LogoImage />
 			</a>
 		</div>

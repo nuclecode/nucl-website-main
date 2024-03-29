@@ -1,6 +1,8 @@
-@import '../../../../styles/variables.scss';
+@import "../../../../styles/variables.scss";
 
 .header-buttons-container {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
+	gap: $spacing-2x;
 }

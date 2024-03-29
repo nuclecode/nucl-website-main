@@ -81,10 +81,10 @@ function Footer() {
 				<div className="social-media-container">
 					&copy; nuclecode {currentYear}
 					<div className="social-media">
-						<a href="https://www.linkedin.com/company/nuclecode/" target="_blank" rel="noreferrer">
+						<a href="https://www.linkedin.com/company/nuclecode/" target="_blank" rel="noreferrer" aria-label="linkedin">
 							<i className="fab fa-linkedin"></i>
 						</a>
-						<a href="https://www.facebook.com/nuclecode/" target="_blank" rel="noreferrer">
+						<a href="https://www.facebook.com/nuclecode/" target="_blank" rel="noreferrer" aria-label="facebook">
 							<i className="fab fa-facebook"></i>
 						</a>
 					</div>
