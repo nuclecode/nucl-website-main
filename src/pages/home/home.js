@@ -8,23 +8,23 @@ import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
 
 import './home.scss';
 
-function Home () {
-    return (
+function Home() {
+	return (
 		<Layout>
 			<div className="home-page-container page-top-space">
 				<div className="container relative">
 					<img src={SpiralImage} className="spiral-image" alt="spiral" />
 
 					<Typography variant="h1">
-						The future of your website secured
+						Privacy-focused web development optimized for your business.
 					</Typography>
-					
+
 					<page-section>
 						<Typography variant="subtitle1" className="subtitle">
-							Get a secure and tested website to prolong the lifespan of your codebase.
+							Security is a priority. Get a secure and tested website to prolong the lifespan of your codebase.
 							With the latest industry best practices and decades of developing experience,
 							we deliver the results you come for.<br />
-							Interested? Book a video call!
+							Interested? Book a video call now.
 						</Typography>
 					</page-section>
 
@@ -48,7 +48,7 @@ function Home () {
 				</div>
 			</div>
 		</Layout>
-    );
+	);
 }
 
 
