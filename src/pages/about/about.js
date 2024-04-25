@@ -12,7 +12,13 @@ function About () {
 			<div className="about-page-container page-top-space">
 				<div className="container relative">
 					<Typography variant="h1">About Us</Typography>
-
+	    
+					<page-section>
+						<Typography variant="subtitle1" className="subtitle">
+							pronounced <span dangerouslySetInnerHTML={{ __html: "/ˈnjuː.kliˌkoʊd/" }} />
+						</Typography>
+					</page-section>
+	
 					<page-section>
 						<Typography variant="subtitle1" className="subtitle">
 							nuclecode web experts specialize in crafting bespoke 
