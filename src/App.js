@@ -11,6 +11,7 @@ import Backend from './pages/solutions/backend/backend';
 import Testing from './pages/solutions/testing/testing';
 import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
 import MarketingEmail from './pages/marketingEmail/marketingEmail';
+import Resources from './pages/resources/resources';
 import { Helmet } from 'react-helmet';
 
 // import Case1 from './components/case-studies/Case1';
@@ -42,6 +43,7 @@ function App() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/schedule-a-call" element={<EnquiryForm />} />
 					<Route path="/have-us-call-you" element={<HaveUsCallYou />} />
+					<Route path="/resources" element={<Resources />} />
 				</Routes>
 				<Routes>
 					<Route path="/solutions/frontend" element={<Frontend />} />
