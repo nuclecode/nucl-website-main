@@ -1,3 +1,10 @@
+@import '../../styles/variables.scss';
+
+.resources-container {
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -62,6 +62,7 @@ function Footer() {
 							<li><a href="/solutions/frontend">Front End</a></li>
 							<li><a href="/solutions/backend">Back End</a></li>
 							<li><a href="/solutions/testing">Software Testing</a></li>
+							<li><a href="/resources">Resources</a></li>
 						</ul>
 					</div>
 
