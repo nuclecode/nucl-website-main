@@ -1,3 +1,29 @@
+@import '../../../styles/variables.scss';
+
 .testing-solution-page-container {
+  .intro-text {
+    padding-right: 100px;
+  }
+
+  
+	.book-a-call-button-container {
+		.book-a-call-button {
+			font-size: 18px;
+			padding: 12px $spacing-3x 10px;
+		}
+	}
+
 	
+
+
+
+
+	@media (min-width: $breakpoint-md-down) {
+		
+
+		.intro-text {
+			padding-right: 150px;
+		}
+	}
+
 }
