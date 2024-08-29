@@ -53,6 +53,36 @@
 		}
 	}
 
+	&.MuiTypography-h5 {
+		font-family: $site-alt-font-family;
+		font-size: 16px;
+		font-weight: $site-regular;
+		line-height: 24px;
+		letter-spacing: 0.15px;
+		text-transform: capitalize;
+
+		@media (min-width: $breakpoint-md-down) {
+			font-size: 18px;
+			line-height: 28px;
+			letter-spacing: 0.25px;
+		}
+	}
+
+	&.MuiTypography-h6 {
+		font-family: $site-alt-font-family;
+		font-size: 14px;
+		font-weight: $site-regular;
+		line-height: 20px;
+		letter-spacing: 0.15px;
+		text-transform: capitalize;
+
+		@media (min-width: $breakpoint-md-down) {
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.25px;
+		}
+	}
+
 	&.MuiTypography-subtitle1 {
 		font-family: $site-default-font-family;
 		font-size: 16px;
