@@ -127,7 +127,6 @@ function Testing() {
                       <li>Advanced Visual Regression Testing</li>
                       <li>Performance & Security Testing</li>
                     </ul>
-                    
                     <page-section>
                     <a href="/schedule-a-call">
                     <Button variant="contained" className="select-plan">Select Plan</Button>
