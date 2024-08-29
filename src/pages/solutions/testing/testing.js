@@ -89,7 +89,11 @@ function Testing() {
                       <li>Basic Automated Tests</li>
                       <li>Basic Performance Testing</li>
                     </ul>
+                    <page-section>
+                    <a href="/schedule-a-call">
                     <Button variant="contained" className="select-plan">Select Plan</Button>
+                    </a>
+                    </page-section>
                   </CardContent>
                 </Card>
               </Grid>
@@ -104,7 +108,11 @@ function Testing() {
                       <li>BDD Implementation</li>
                       <li>Basic Visual Regression Testing</li>
                     </ul>
+                    <page-section>
+                    <a href="/schedule-a-call">
                     <Button variant="contained" className="select-plan">Select Plan</Button>
+                    </a>
+                    </page-section>
                   </CardContent>
                 </Card>
               </Grid>
@@ -119,7 +127,11 @@ function Testing() {
                       <li>Advanced Visual Regression Testing</li>
                       <li>Performance & Security Testing</li>
                     </ul>
+                    <page-section>
+                    <a href="/schedule-a-call">
                     <Button variant="contained" className="select-plan">Select Plan</Button>
+                    </a>
+                    </page-section>
                   </CardContent>
                 </Card>
               </Grid>
