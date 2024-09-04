@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  justify-content: center; /* Centers the text container horizontally */
+  align-items: center;     /* Centers the text container vertically */
+  padding: 2rem;
+  height: 100vh;
+
+  .textContainer {
+    max-width: 50%;
+    text-align: left; /* Left-aligns the text within the container */
+  }
+
+  .text {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #333;
+    display: inline-block; /* Ensures the text block can be centered */
+  }
+
+  .ctaButton {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #005bb5;
+    }
+  }
+
+  .videoContainer {
+    max-width: 45%;
+    margin-left: 2rem; /* Adds space between text and video */
+    .video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
