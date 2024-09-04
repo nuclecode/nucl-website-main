@@ -5,13 +5,15 @@ import SpiralImage from '../../assets/images/home-spiral.png';
 import ReadyToStart from '../../components/readyToStart/readyToStart';
 import OurServices from '../../components/ourServices/ourServices';
 import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
-
+import HeroSection from "../../components/Herosection/HeroSection";
 import './home.scss';
 
 function Home() {
 	return (
 		<Layout>
+			<HeroSection />
 			<div className="home-page-container page-top-space">
+
 				<div className="container relative">
 					<img src={SpiralImage} className="spiral-image" alt="spiral" />
 
