@@ -21,19 +21,19 @@
       input[type="text"] {
         padding: 10px;
         border-radius: 8px;
-        border: 2px solid rgb(245, 163, 163);  // Default pink border
+        border: 2px solid rgb(245, 163, 163);
         width: 50%;  // Half of screen width
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Default shadow
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
         &:focus {
-          border-color: rgb(240, 100, 34);  // Orange border on focus
-          box-shadow: 0 4px 6px rgba(240, 100, 34, 0.5);  // Orange shadow on focus
+          border-color: rgb(240, 100, 34);
+          box-shadow: 0 4px 6px rgba(240, 100, 34, 0.5);
           outline: none;
         }
       }
   
       .search-button {
-        background-color: rgb(240, 100, 34);  // Matching the header color
+        background-color: rgb(240, 100, 34);
         border: none;
         color: white;
         padding: 10px 15px;
@@ -49,7 +49,7 @@
         color: white;
         border-radius: 8px;
         cursor: pointer;
-        margin-right: 10px;  // Align with the search bar
+        margin-right: 10px;
       }
     }
   
@@ -59,7 +59,7 @@
       border-spacing: 0;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Box shadow for the table
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
       th, td {
         padding: 12px 15px;
@@ -70,12 +70,12 @@
       th {
         background-color: rgb(240, 100, 34);
         color: white;
-        border-top-left-radius: 12px;  // Rounded top corners for the header
+        border-top-left-radius: 12px; 
         border-top-right-radius: 12px;
       }
   
       tr:nth-child(even) {
-        background-color: rgb(245, 163, 163);  // Alternating row colors
+        background-color: rgb(245, 163, 163);
       }
   
       tr:nth-child(odd) {
