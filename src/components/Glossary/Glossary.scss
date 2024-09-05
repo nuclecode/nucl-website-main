@@ -1,0 +1,581 @@
+.glossary-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    h2 {
+      color: rgb(240, 100, 34);
+      text-align: center;
+    }
+  
+    .search-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+  
+      input[type="text"] {
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid rgb(245, 163, 163);  // Default pink border
+        width: 50%;  // Half of screen width
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Default shadow
+  
+        &:focus {
+          border-color: rgb(240, 100, 34);  // Orange border on focus
+          box-shadow: 0 4px 6px rgba(240, 100, 34, 0.5);  // Orange shadow on focus
+          outline: none;
+        }
+      }
+  
+      .search-button {
+        background-color: rgb(240, 100, 34);  // Matching the header color
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        margin-left: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+  
+      .toggle-button {
+        padding: 10px 15px;
+        background-color: rgb(240, 100, 34);
+        border: none;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 10px;  // Align with the search bar
+      }
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      border-radius: 12px;  // Rounded corners
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Box shadow for the table
+  
+      th, td {
+        padding: 12px 15px;
+        border: none;
+        text-align: left;
+      }
+  
+      th {
+        background-color: rgb(240, 100, 34);
+        color: white;
+        border-top-left-radius: 12px;  // Rounded top corners for the header
+        border-top-right-radius: 12px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: rgb(245, 163, 163);  // Alternating row colors
+      }
+  
+      tr:nth-child(odd) {
+        background-color: white;
+      }
+  
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+  
+      .glow {
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+  
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px rgb(240, 100, 34), 0 0 20px rgb(240, 100, 34), 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+        }
+        
+        to {
+          text-shadow: 0 0 20px rgb(240, 100, 34), 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 50px #ff4500, 0 0 60px #ff4500, 0 0 70px #ff4500, 0 0 80px #ff4500;
+        }
+      }
+    }
+  }
+  
+// .glossary-container {
+//     margin: 0 auto;
+//     padding: 20px;
+//     max-width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+  
+//     h2 {
+//       color: rgb(240, 100, 34);
+//       text-align: center;
+//     }
+  
+//     .search-container {
+//       display: flex;
+//       justify-content: center;
+//       margin-bottom: 20px;
+      
+//       input[type="text"] {
+//         padding: 10px;
+//         border-radius: 8px;
+//         border: 2px solid rgb(245, 163, 163);  // Nuclecode pink color border
+//         width: 50%;  // Half of screen width
+//       }
+  
+//       .search-button {
+//         background-color: rgb(240, 100, 34);  // Matching the header color
+//         border: none;
+//         color: white;
+//         padding: 10px 15px;
+//         margin-left: 10px;
+//         border-radius: 8px;
+//         cursor: pointer;
+//       }
+//     }
+  
+//     .toggle-container {
+//       margin-bottom: 20px;
+  
+//       .toggle-button {
+//         padding: 10px 15px;
+//         background-color: rgb(240, 100, 34);
+//         border: none;
+//         color: white;
+//         border-radius: 8px;
+//         cursor: pointer;
+//       }
+//     }
+  
+//     table {
+//       width: 100%;
+//       border-collapse: collapse;
+//       border-spacing: 0;
+//       border: 1px solid gray;
+//       border-radius: 12px;
+//       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+//       th, td {
+//         padding: 12px 15px;
+//         border: none;
+//         text-align: left;
+//       }
+  
+//       th {
+//         background-color: rgb(240, 100, 34);
+//         color: white;
+//       }
+  
+//       tr:nth-child(even) {
+//         background-color: rgb(245, 163, 163);
+//       }
+  
+//       tr:nth-child(odd) {
+//         background-color: white;
+//       }
+  
+//       tr {
+//         border-bottom: 1px solid #ddd;
+//       }
+  
+//       .glow {
+//         animation: glow 1s ease-in-out infinite alternate;
+//       }
+  
+//       @keyframes glow {
+//         from {
+//           text-shadow: 0 0 10px rgb(240, 100, 34), 0 0 20px rgb(240, 100, 34), 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+//         }
+        
+//         to {
+//           text-shadow: 0 0 20px rgb(240, 100, 34), 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 50px #ff4500, 0 0 60px #ff4500, 0 0 70px #ff4500, 0 0 80px #ff4500;
+//         }
+//       }
+//     }
+//   }
+  
+
+
+// // .glossary-container {
+// //     margin: 0 auto;
+// //     padding: 20px;
+// //     max-width: 100%;  // Full-width for the table to match video block
+// //     display: flex;
+// //     flex-direction: column;
+// //     align-items: center;
+  
+// //     h2 {
+// //       color: rgb(240, 100, 34);
+// //       text-align: center;
+// //     }
+  
+// //     .search-container {
+// //       display: flex;
+// //       justify-content: center;
+// //       margin-bottom: 20px;
+      
+// //       input[type="text"] {
+// //         padding: 10px;
+// //         border-radius: 8px;
+// //         border: 1px solid #ccc;
+// //         width: 50%;  // Adjust width for responsiveness
+// //       }
+  
+// //       .search-button {
+// //         background-color: rgb(240, 100, 34);  // Matching the header color
+// //         border: none;
+// //         color: white;
+// //         padding: 10px 15px;
+// //         margin-left: 10px;
+// //         border-radius: 8px;
+// //         cursor: pointer;
+// //       }
+// //     }
+  
+// //     table {
+// //       width: 100%;  // Full width of container
+// //       border-collapse: collapse;
+// //       border-spacing: 0;
+// //       border: 1px solid gray;  // Thinner gray border
+// //       border-radius: 12px;
+// //       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Adding shadow like video block
+// //       overflow: hidden;
+  
+// //       th, td {
+// //         padding: 12px 15px;
+// //         border: none;  // Removing inner borders
+// //         text-align: left;
+// //       }
+  
+// //       th {
+// //         background-color: rgb(240, 100, 34);
+// //         color: white;
+// //       }
+  
+// //       tr:nth-child(even) {
+// //         background-color: rgb(245, 163, 163);  // Nuclecode pink color
+// //       }
+  
+// //       tr:nth-child(odd) {
+// //         background-color: white;
+// //       }
+  
+// //       tr {
+// //         border-bottom: 1px solid #ddd;  // Line between rows
+// //       }
+  
+// //       .glow {
+// //         animation: glow 1s ease-in-out infinite alternate;
+// //       }
+  
+// //       @keyframes glow {
+// //         from {
+// //           text-shadow: 0 0 10px rgb(240, 100, 34), 0 0 20px rgb(240, 100, 34), 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+// //         }
+        
+// //         to {
+// //           text-shadow: 0 0 20px rgb(240, 100, 34), 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 50px #ff4500, 0 0 60px #ff4500, 0 0 70px #ff4500, 0 0 80px #ff4500;
+// //         }
+// //       }
+// //     }
+// //   }
+  
+
+// // // .glossary-container {
+// // //     margin: 0 auto;
+// // //     padding: 20px;
+// // //     max-width: 100%;  // Full-width for the table to match video block
+// // //     display: flex;
+// // //     flex-direction: column;
+// // //     align-items: center;
+  
+// // //     h2 {
+// // //       color: rgb(240, 100, 34);
+// // //       text-align: center;
+// // //     }
+  
+// // //     .search-container {
+// // //       display: flex;
+// // //       justify-content: center;
+// // //       margin-bottom: 20px;
+      
+// // //       input[type="text"] {
+// // //         padding: 10px;
+// // //         border-radius: 8px;
+// // //         border: 1px solid #ccc;
+// // //         width: 50%;  // Adjust width for responsiveness
+// // //       }
+  
+// // //       .search-button {
+// // //         background-color: rgb(240, 100, 34);  // Matching the header color
+// // //         border: none;
+// // //         color: white;
+// // //         padding: 10px 15px;
+// // //         margin-left: 10px;
+// // //         border-radius: 8px;
+// // //         cursor: pointer;
+// // //       }
+// // //     }
+  
+// // //     table {
+// // //       width: 100%;  // Full width of container
+// // //       border-collapse: collapse;
+// // //       border-spacing: 0;
+// // //       border: 1px solid gray;  // Thinner gray border
+// // //       border-radius: 12px;
+// // //       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Adding shadow like video block
+// // //       overflow: hidden;
+  
+// // //       th, td {
+// // //         padding: 12px 15px;
+// // //         border: none;  // Removing inner borders
+// // //         text-align: left;
+// // //       }
+  
+// // //       th {
+// // //         background-color: rgb(240, 100, 34);
+// // //         color: white;
+// // //       }
+  
+// // //       tr:nth-child(even) {
+// // //         background-color: rgb(245, 163, 163);  // Nuclecode pink color
+// // //       }
+  
+// // //       tr:nth-child(odd) {
+// // //         background-color: white;
+// // //       }
+  
+// // //       tr {
+// // //         border-bottom: 1px solid #ddd;  // Line between rows
+// // //       }
+  
+// // //       .glow {
+// // //         animation: glow 1s ease-in-out infinite alternate;
+// // //       }
+  
+// // //       @-webkit-keyframes glow {
+// // //         from {
+// // //           text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+// // //         }
+        
+// // //         to {
+// // //           text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+// // //         }
+// // //       }
+// // //     }
+// // //   }
+  
+
+
+// // // // .glossary-container {
+// // // //     margin: 0 auto;
+// // // //     padding: 20px;
+// // // //     max-width: 1200px;  // Ensure this matches the video block width
+    
+// // // //     h2 {
+// // // //       color: rgb(240, 100, 34);
+// // // //       text-align: center;
+// // // //     }
+  
+// // // //     .search-container {
+// // // //       display: flex;
+// // // //       justify-content: center;
+// // // //       margin-bottom: 20px;
+      
+// // // //       input[type="text"] {
+// // // //         padding: 10px;
+// // // //         border-radius: 8px;
+// // // //         border: 1px solid #ccc;
+// // // //         width: 50%;  // Adjust width for responsiveness
+// // // //       }
+  
+// // // //       .search-button {
+// // // //         background-color: #007bff;
+// // // //         border: none;
+// // // //         color: white;
+// // // //         padding: 10px 15px;
+// // // //         margin-left: 10px;
+// // // //         border-radius: 8px;
+// // // //         cursor: pointer;
+// // // //       }
+// // // //     }
+  
+// // // //     table {
+// // // //       width: 100%;  // Full width of container
+// // // //       border-collapse: separate;
+// // // //       border-spacing: 0;
+// // // //       border-radius: 12px;
+// // // //       border: 2px solid gray;  // Gray border on corners
+// // // //       overflow: hidden;
+  
+// // // //       th, td {
+// // // //         padding: 12px 15px;
+// // // //         border: 1px solid #dddddd;
+// // // //         text-align: left;
+// // // //       }
+  
+// // // //       th {
+// // // //         background-color: rgb(240, 100, 34);
+// // // //         color: white;
+// // // //       }
+  
+// // // //       tr:nth-child(even) {
+// // // //         background-color: rgb(245, 163, 163);  // Nuclecode pink color
+// // // //       }
+  
+// // // //       tr:nth-child(odd) {
+// // // //         background-color: white;
+// // // //       }
+  
+// // // //       .glow {
+// // // //         animation: glow 1s ease-in-out infinite alternate;
+// // // //       }
+  
+// // // //       @-webkit-keyframes glow {
+// // // //         from {
+// // // //           text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+// // // //         }
+        
+// // // //         to {
+// // // //           text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+// // // //         }
+// // // //       }
+// // // //     }
+// // // //   }
+  
+
+
+// // // // // .glossary-container {
+// // // // //     margin: 0 auto;
+// // // // //     padding: 20px;
+// // // // //     max-width: 1200px;  // Match this width to the width of the video block
+    
+// // // // //     h2 {
+// // // // //       color: rgb(240, 100, 34);
+// // // // //       text-align: center;
+// // // // //     }
+  
+// // // // //     .search-container {
+// // // // //       display: flex;
+// // // // //       justify-content: center;
+// // // // //       margin-bottom: 20px;
+      
+// // // // //       input[type="text"] {
+// // // // //         padding: 10px;
+// // // // //         border-radius: 8px;
+// // // // //         border: 1px solid #ccc;
+// // // // //         width: 50%;  // Adjust width for responsiveness
+// // // // //       }
+  
+// // // // //       .search-button {
+// // // // //         background-color: #007bff;
+// // // // //         border: none;
+// // // // //         color: white;
+// // // // //         padding: 10px 15px;
+// // // // //         margin-left: 10px;
+// // // // //         border-radius: 8px;
+// // // // //         cursor: pointer;
+// // // // //       }
+// // // // //     }
+  
+// // // // //     table {
+// // // // //       width: 100%;  // Adjust table to full width
+// // // // //       border-collapse: collapse;
+// // // // //       border-radius: 12px;
+// // // // //       overflow: hidden;  // To ensure rounded corners
+  
+// // // // //       th, td {
+// // // // //         padding: 12px 15px;
+// // // // //         border: 1px solid #dddddd;
+// // // // //         text-align: left;
+// // // // //       }
+  
+// // // // //       th {
+// // // // //         background-color: rgb(240, 100, 34);
+// // // // //         color: white;
+// // // // //       }
+  
+// // // // //       tr:nth-child(even) {
+// // // // //         background-color: rgb(245, 163, 163);  // Nuclecode pink color
+// // // // //       }
+  
+// // // // //       tr:nth-child(odd) {
+// // // // //         background-color: white;
+// // // // //       }
+// // // // //     }
+// // // // //   }
+  
+
+
+// // // // // // .glossary-container {
+// // // // // //     font-family: Arial, sans-serif;
+// // // // // //     padding: 20px;
+// // // // // //     max-width: 1200px;
+// // // // // //     margin: 0 auto;
+// // // // // // }
+
+// // // // // // h2 {
+// // // // // //     text-align: center;
+// // // // // //     margin-bottom: 20px;
+// // // // // //     color: rgb(240, 100, 34);
+// // // // // // }
+
+// // // // // // .search-container {
+// // // // // //     display: flex;
+// // // // // //     justify-content: center;
+// // // // // //     margin-bottom: 20px;
+// // // // // // }
+
+// // // // // // .search-input {
+// // // // // //     width: 80%;
+// // // // // //     padding: 10px;
+// // // // // //     font-size: 16px;
+// // // // // //     border: 1px solid #ccc;
+// // // // // //     border-radius: 4px 0 0 4px;
+// // // // // // }
+
+// // // // // // .search-button {
+// // // // // //     background-color: #f0f0f0;
+// // // // // //     border: 1px solid #ccc;
+// // // // // //     border-left: none;
+// // // // // //     padding: 10px;
+// // // // // //     border-radius: 0 4px 4px 0;
+// // // // // //     cursor: pointer;
+// // // // // // }
+
+// // // // // // .glossary-table {
+// // // // // //     width: 100%;
+// // // // // //     border-collapse: collapse;
+// // // // // //     margin-top: 20px;
+// // // // // //     border-radius: 8px;
+// // // // // //     overflow: hidden;
+// // // // // // }
+
+// // // // // // .glossary-table th,
+// // // // // // .glossary-table td {
+// // // // // //     border: 1px solid #ddd;
+// // // // // //     padding: 12px;
+// // // // // //     text-align: left;
+// // // // // // }
+
+// // // // // // .glossary-table th {
+// // // // // //     background-color: rgb(240, 100, 34);
+// // // // // //     color: white;
+// // // // // //     text-align: center;
+// // // // // // }
+
+// // // // // // .glossary-table tr:nth-child(even) {
+// // // // // //     background-color: rgb(245, 163, 163);
+// // // // // // }
+
+// // // // // // .glossary-table tr:nth-child(odd) {
+// // // // // //     background-color: white;
+// // // // // // }
+
+// // // // // // .glossary-table tr:hover {
+// // // // // //     background-color: #f1f1f1;
+// // // // // // }
