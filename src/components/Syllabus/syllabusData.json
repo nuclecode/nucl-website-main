@@ -1,0 +1,26 @@
+{
+    "title": "Testing Excellence Hub",
+    "description": "Learn about global best practices in testing and automation and how they can improve your business.",
+    "syllabus": [
+        {
+    "title": "ISTQB Foundation 4.0 Syllabus",
+    "description": "The ISTQB Foundation Level Certification (version 4.0) provides essential knowledge of software testing. This syllabus outlines the key topics covered, including testing fundamentals, lifecycle, static techniques, and more."
+        }
+    ],
+    "sections": [
+      {
+        "title": "1. Fundamentals of Testing",
+        "content": "This section covers the basics of software testing including definitions, objectives, and principles."
+      },
+      {
+        "title": "2. Testing Throughout the Software Lifecycle",
+        "content": "Learn about the role of testing in different software development models and phases."
+      },
+      {
+        "title": "3. Static Testing",
+        "content": "Static techniques, including reviews and inspections, are covered in this section."
+      }
+    ],
+    "downloadLink": "https://example.com/ISTQB_Foundation_4.0.pdf"
+  }
+  

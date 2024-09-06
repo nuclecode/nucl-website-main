@@ -32,6 +32,8 @@ function Glossary() {
   return (
     <div className="glossary-container">
       <Typography variant="h2">ISTQB Testing Glossary</Typography>
+      <h2>ISTQB Testing Glossary</h2>
+      
       <div className="search-container">
         <button className="toggle-button" onClick={toggleGlow}>
           {glowActive ? 'Turn Off Glow' : 'Turn On Glow'}
