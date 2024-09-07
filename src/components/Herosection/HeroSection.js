@@ -7,7 +7,6 @@ const HeroSection = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [player, setPlayer] = useState(null);
     const videoRef = useRef(null);
-    const [scriptLoaded, setScriptLoaded] = useState(false);
     const text = "Harness the power of optimized ".split(" ");
     useEffect(() => {
         const onYouTubeIframeAPIReady = () => {
@@ -25,13 +24,11 @@ const HeroSection = () => {
 
         const loadYouTubeAPI = () => {
             if (window.YT) {
-                setScriptLoaded(true);
                 onYouTubeIframeAPIReady();
             } else {
                 const script = document.createElement('script');
                 script.src = 'https://www.youtube.com/iframe_api';
                 script.onload = () => {
-                    setScriptLoaded(true);
                     window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
                 };
                 document.body.appendChild(script);
