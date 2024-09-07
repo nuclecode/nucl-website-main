@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./HeroSection.module.scss";
 
 const HeroSection = () => {
-    const [dynamicWord, setDynamicWord] = useState("cool");
-    const text = "Feel the power of optimized ".split(" ");
+    const [dynamicWord, setDynamicWord] = useState("CI/CD");
+    const text = "Harness the power of optimized ".split(" ");
 
     useEffect(() => {
         const words = ["CI/CD", "Design System", "QA Testing"];
@@ -13,10 +13,16 @@ const HeroSection = () => {
         const interval = setInterval(() => {
             setDynamicWord(words[index]);
             index = (index + 1) % words.length;
-        }, 2000); // Change word every 2 seconds
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
+
+    const zoomVariants = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: { opacity: 1, scale: 1.2 },
+        exit: { opacity: 0, scale: 0.8 },
+    };
 
     return (
         <div className={styles.hero}>
@@ -35,28 +41,37 @@ const HeroSection = () => {
                             {el}{" "}
                         </motion.span>
                     ))}
-                    <motion.span
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1.2 }}
-                        transition={{
-                            duration: 0.5,
-                            delay: text.length * 0.2,
-                            repeat: Infinity,
-                            repeatType: "reverse",
-                        }}
-                        className={styles.dynamicWord}
-                    >
-                        {dynamicWord}
-                    </motion.span>
+
+                    <AnimatePresence mode='wait'>
+                        <motion.span
+                            key={dynamicWord}
+                            variants={zoomVariants}
+                            initial="hidden"
+                            animate="visible"
+                            exit="exit"
+                            transition={{
+                                duration: 0.5,
+                            }}
+                            className={styles.dynamicWord}
+                        >
+                            {dynamicWord}
+                        </motion.span>
+                    </AnimatePresence>
                 </div>
-                <button className={styles.ctaButton}>Chat to an expert</button>
+                <div className={styles.ctaButtonContainer}>
+                    <button className={styles.ctaButton}>Chat to an expert</button>
+                </div>
             </div>
+
             <div className={styles.videoContainer}>
-                <video
-                    src="/path/to/your/video.mp4"
-                    autoPlay
-                    muted
-                    loop
+
+                <iframe
+                    width="420"
+                    height="240"
+                    src="https://www.youtube.com/embed/gMKEb_L_vNI"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
                     className={styles.video}
                 />
             </div>
