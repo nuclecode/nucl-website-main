@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 180px 50px 20px 50px;
+  gap: 40px;
+  padding: 180px 90px 20px 90px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -15,7 +15,7 @@
   flex: 1;
   min-height: 60px;
   padding: 30px 20px 0 0;
-
+  margin-left: -10px;
 }
 
 .text {
@@ -24,54 +24,142 @@
   height: 160px;
   padding: 22px 0 0 0;
 
-  .span .dynamicWord {
+  .dynamicWord {
     white-space: nowrap;
     height: 500px;
     width: 300px;
     transition: width 0.3s ease;
-    padding-left: 18px;
     justify-content: flex-start;
     align-items: center;
-
   }
 }
 
 .ctaButtonContainer {
   margin-top: 20px;
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+}
 
-  .ctaButton {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.ctaButton {
+  background: rgb(240, 100, 34);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+
+  &:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+    background-color: #f9992c;
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 }
 
-.video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.playPause {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
+  padding: 5px 10px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease;
+    fill: #f06422;
+  }
+
+  .playPauseText {
+    font-size: 1rem;
+    color: #f06422;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+    svg {
+      fill: #f9992c;
+    }
+
+    .playPauseText {
+      color: #f9992c;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 .videoContainer {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-left: 10px;
+}
 
-  iframe {
+.videoCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 420px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  .videoEmbed {
     width: 100%;
-    max-width: 350px;
-    height: 200px;
+    height: 80%;
+    object-fit: cover;
+  }
+}
 
-    @media (max-width: 768px) {
-      width: 100%;
-      height: auto;
+@media (max-width: 983px) {
+  .ctaButtonContainer {
+    margin-top: 80px;
+    display: inline-block;
+    padding-bottom: 30px;
+  }
+
+  .ctaButton {
+    background: rgb(240, 100, 34);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+      font-weight: bold;
+      transform: scale(1.05);
+      background-color: #f9992c;
     }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .ctaButtonContainer {
+    margin-top: 100px;
+    display: inline-block;
+    padding-bottom: 30px;
   }
 }
