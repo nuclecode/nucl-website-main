@@ -1,63 +1,133 @@
 .syllabus-container {
     padding: 20px;
-    background-color: #fafafa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    margin: 0 auto;
-    flex-direction: column;
     margin-right: 20px;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 auto;
+  
     h2 {
-      color: rgb(240, 100, 34); // Nuclecode Orange
-      text-align: center;
-      margin-bottom: 20px;
+      color: rgb(240, 100, 34); 
+      text-align: center; 
+      margin-bottom: 10px; 
+      font-size: 28px;
     }
-  
+
     .description {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+        text-align: justify;
     }
   
-    .section {
-      margin-bottom: 20px;
-  
-      h3 {
-        color: rgb(245, 163, 163); // Nuclecode Pink
-        cursor: pointer;
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        
-        &:hover {
-          background-color: rgba(240, 100, 34, 0.1);
-        }
-      }
-  
-      .content {
-        padding: 10px;
-        border-left: 3px solid rgb(240, 100, 34); // Nuclecode Orange
-        background-color: rgba(240, 100, 34, 0.05);
-        border-radius: 0 5px 5px 5px;
-      }
+    h3 {
+      color: rgb(245, 163, 163); 
+      text-align: left; 
+      margin-bottom: 8px; 
+      font-size: 24px;
+    }
+
+    .syllabus-intro {
+        margin-bottom: 30px;
+        text-align: justify;
+        text-align: left;
+    }
+
+    .syllabus-description {
+        text-align: left;
     }
   
+    .expand-btn, 
     .download-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 25px;
-      background-color: rgb(240, 100, 34); // Nuclecode Orange
-      color: #fff;
-      text-decoration: none;
+      background-color: rgb(240, 100, 34); 
+      border: none;
+      padding: 15px 20px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
       border-radius: 5px;
-      text-align: center;
-      transition: background-color 0.3s;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 40px; 
+      text-align: left; 
+      text-decoration: none;
+    }
   
+    .expand-btn:hover,
+    .download-btn:hover {
+      background-color: rgb(220, 90, 30); 
+    }
+  
+    .expand-btn:active,
+    .download-btn:active {
+      background-color: rgb(200, 80, 20); 
+    }
+  
+    .section,
+    .subsection,
+    .sub-subsection {
+      margin-bottom: 20px; 
+      text-align: left; 
+    }
+  
+    .section-header,
+    .subsection-header,
+    .sub-subsection-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 5px; 
+      background-color: #f9f9f9;
+      border-radius: 5px;
+
       &:hover {
-        background-color: rgb(245, 163, 163); // Nuclecode Pink
+        background-color: rgba(240, 100, 34, 0.1);
+        transition: background-color 0.3s;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
+    }
+  
+    .chevron {
+      transition: transform 0.3s ease;
+      fill: currentColor;
+    }
+  
+    .chevron.expanded {
+      transform: rotate(180deg);
+    }
+  
+    .section-header h3,
+    .section-header .chevron {
+      color: rgb(240, 100, 34); 
+
+    }
+  
+    .subsection-header h4,
+    .subsection-header .chevron {
+      color: rgb(245, 163, 163); 
+      font-size: 22px;
+    }
+  
+    .sub-subsection-header h5,
+    .sub-subsection-header .chevron {
+      color: black;
+      font-size: 20px;
+    }
+
+    .section-content,
+    .subsection-content,
+    .sub-subsection-content {
+        padding: 10px;
+        border-left: 3px solid rgb(240, 100, 34);
+        background-color: rgba(240, 100, 34, 0.1);
+    }
+  
+    .paragraph {
+      margin: 15px 0; 
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
     }
   }
   
