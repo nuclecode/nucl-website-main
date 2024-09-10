@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import Card from '../../components/card/card';
-import { FaCode, FaServer, FaMobileAlt, FaBug, FaCogs, FaRobot } from 'react-icons/fa'; // Sample icons
+import { FaCode, FaServer, FaMobileAlt, FaBug, FaCogs, FaRobot } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import './ourServices.scss';
@@ -16,63 +16,7 @@ function OurServices() {
 			{ title: 'AI Development', icon: FaRobot, description: 'Providing AI, machine learning, and data analytics solutions.', tech: ['TensorFlow', 'PyTorch'], link: '/solutions/ai' },
 		];
 
-	// 	const cardData = [
-	// 	{
-	// 		title: "Frontend Development",
-	// 		description: "Crafting beautiful and intuitive user interfaces.",
-	// 		technologies: ["React", "Vue", "Angular"],
-	// 		iconClass: "fas fa-code",
-	// 		link: "#frontend"
-	// 	},
-	// 	{
-	// 		title: "Backend Development",
-	// 		description: "Building robust and scalable server-side applications.",
-	// 		technologies: ["Node.js", "Python", "Go"],
-	// 		iconClass: "fas fa-server",
-	// 		link: "#backend"
-	// 	},
-	// 	{
-	// 		title: "Software Testing",
-	// 		description: "Ensuring the quality and reliability of your software products.",
-	// 		technologies: ["Selenium", "Cypress"],
-	// 		iconClass: "fas fa-bug",
-	// 		link: "#testing"
-	// 	},
-	// 	// Add more cards here as needed
-	// ];
-
-
 	return (
-		<>
-			{/*<Grid container justifyContent="center" style={{ marginBottom: '20px' }}>*/}
-			{/*	<Typography variant="h3" align="center">*/}
-			{/*		Our Services*/}
-			{/*	</Typography>*/}
-			{/*</Grid>*/}
-			{/*<Grid container spacing={3} justifyContent="center">*/}
-			{/*	{cardData.map((card, index) => (*/}
-			{/*		<Grid item xs={12} sm={6} md={4} key={index}>*/}
-			{/*			<motion.div>*/}
-			{/*				<Card>*/}
-			{/*					<div className="card-icon">*/}
-			{/*						<i className={card.iconClass}></i>*/}
-			{/*					</div>*/}
-			{/*					<h3>{card.title}</h3>*/}
-			{/*					<p>{card.description}</p>*/}
-			{/*					<div className="card-technologies">*/}
-			{/*						{card.technologies.map((tech, idx) => (*/}
-			{/*							<span key={idx}>{tech}</span>*/}
-			{/*						))}*/}
-			{/*					</div>*/}
-			{/*					<a href={card.link} className="learn-more">*/}
-			{/*						Learn more →*/}
-			{/*					</a>*/}
-			{/*				</Card>*/}
-			{/*			</motion.div>*/}
-			{/*		</Grid>*/}
-			{/*	))}*/}
-			{/*</Grid>*/}
-
 			<div className="our-services-container">
 				<Typography variant="h2">Our Services</Typography>
 				<div className="content-container tm-by3">
@@ -99,7 +43,6 @@ function OurServices() {
 					</Grid>
 				</div>
 			</div>
-		</>
 	);
 }
 
