@@ -2,7 +2,6 @@ import { Grid, Typography } from '@mui/material';
 import Card from '../../components/card/card';
 import { FaCode, FaServer, FaMobileAlt, FaBug, FaCogs, FaRobot } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
-import { motion } from 'framer-motion';
 import './ourServices.scss';
 
 function OurServices() {
