@@ -6,6 +6,9 @@ import ReadyToStart from '../../components/readyToStart/readyToStart';
 import OurServices from '../../components/ourServices/ourServices';
 import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
 import HeroSection from "../../components/Herosection/HeroSection";
+import TestCalculator from "../../components/TestCalculator/TestCalculator"
+import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
+import TestingCostCalculator from '../../components/TestingCostCalculator/TestingCostCalculator';
 import './home.scss';
 
 function Home() {
@@ -36,6 +39,13 @@ function Home() {
 						</a>
 					</page-section>
 
+				<div className="home-page-adv-container">
+					
+						<OnePoundAdv />
+						<TestCalculator />
+					
+				</div>
+
 					<page-section>
 						<OurServices />
 					</page-section>
@@ -49,6 +59,7 @@ function Home() {
 					</page-section>
 				</div>
 			</div>
+			
 		</Layout>
 	);
 }
