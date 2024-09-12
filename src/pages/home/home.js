@@ -8,6 +8,7 @@ import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
 import HeroSection from "../../components/Herosection/HeroSection";
 import TestCalculator from "../../components/TestCalculator/TestCalculator"
 import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
+import TestingCostCalculator from '../../components/TestingCostCalculator/TestingCostCalculator';
 import './home.scss';
 
 function Home() {
@@ -38,11 +39,11 @@ function Home() {
 						</a>
 					</page-section>
 
-				<div>
-					<page-section>
+				<div className="home-page-adv-container">
+					
 						<OnePoundAdv />
 						<TestCalculator />
-					</page-section>
+					
 				</div>
 
 					<page-section>

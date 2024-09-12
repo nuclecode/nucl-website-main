@@ -1,37 +1,88 @@
 import React, { useState } from 'react';
 import './OnePoundAdv.scss';
-// import { addClientData } from '../../firebaseConfig'; // Firebase function
+import { TbCoins } from "react-icons/tb";
+import { PiCoinVerticalLight, PiHandCoinsDuotone } from "react-icons/pi";
+import { db } from '../../firebaseConfig';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { Snackbar, Alert } from '@mui/material'; 
+
 
 const OnePoundAdv = () => {
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [showErrorAlert, setShowErrorAlert] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // addClientData({ phone, email });
-    setPhone('');
-    setEmail('');
+
+    // Reset alerts
+    setShowAlert(false);
+    setShowErrorAlert(false);
+
+    try {
+      await addDoc(collection(db, 'callback'), {
+        phone: phone,
+        email: email,
+        timestamp: serverTimestamp(),
+      });
+
+      // Clear input fields after submission
+      setPhone('');
+      setEmail('');
+
+      // Show success alert
+      setShowAlert(true);
+
+    } catch (error) {
+      console.error("Error saving data to database:", error);
+      setShowErrorAlert(true);
+    }
   };
 
   return (
     <div className="one-pound-adv">
+      {/* Success and Error Alerts */}
+      {showAlert && (
+        <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={true} autoHideDuration={5000}>
+          <Alert severity="success" variant="filled">
+            Thank you! We'll get in touch with you shortly.
+          </Alert>
+        </Snackbar>
+      )}
+
+      {showErrorAlert && (
+        <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={true} autoHideDuration={5000}>
+          <Alert severity="error" variant="filled">
+            Sorry, there was an error. Please try again.
+          </Alert>
+        </Snackbar>
+      )}
+
       <div className="adv-header">
-        <h2 className="adv-title">Special Offer: Testing Services with Big Discounts!</h2>
-        <img src="/path-to-your-svg-image.svg" alt="Special Offer" className="svg-offer-icon" />
+        <h2 className="adv-title">Special Offer: Testing Services <br/><br/> with Big Discounts!</h2>
+        <TbCoins className="svg-offer-icon" />
       </div>
       
       <p className="adv-description">
-        Get manual tests for just £1, unit tests for £1, integration tests for £3, and end-to-end tests for £5.
-        Don't miss out on this amazing deal. Let our experts ensure your software works flawlessly.
+        Get manual or automated tests:
+        <ul>
+          <ul>Unit test - £1 per test, Integration test - £3 per test</ul>
+          <ul>End-To-End - £5 per test, Accessibility testing - £10 per webpage</ul>
+        </ul>
+        Don't miss out on this great deal. Let our experts ensure that your software runs flawlessly.
       </p>
 
       <div className="discount-banner">
-        <img src="/path-to-your-discount-icon.svg" alt="Discount" className="discount-icon" />
+        <PiCoinVerticalLight className="discount-icon" />
+        <PiCoinVerticalLight className="discount-icon" />
+        <PiCoinVerticalLight className="discount-icon" />
         <span className="discount-text">Up to 50% Off!</span>
       </div>
 
-      <p className="cta-text">Calculate your savings with our <a href="#calculator">Test Price Calculator</a></p>
+      <p className="cta-text">Calculate your savings with our Test Price Calculator</p>
 
+      {/* Contact Form */}
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -51,40 +102,17 @@ const OnePoundAdv = () => {
       </form>
 
       <div className="action-buttons">
-        <a href="tel:+YourPhoneNumber" className="btn">Call Us Now</a>
-        <a href="mailto:YourEmail@example.com" className="button">Email Us</a>
+        <a href="tel:+447355573823" className="btn">Call Us Now</a>
+        <a href="mailto:hire@nuclecode.uk" className="btn">Email Us</a>
       </div>
 
       <p className="adv-footer">Leave your contact info, and we'll reach out to you shortly.</p>
 
       <div className="moving-image-container">
-        <img src="/path-to-moving-image.gif" alt="Moving Image" className="moving-image" />
+        <PiHandCoinsDuotone className="moving-image" />
       </div>
     </div>
   );
 };
 
 export default OnePoundAdv;
-
-
-
-// import React from 'react';
-// import './OnePoundAdv.scss';
-
-// const OnePoundAdv = () => {
-//   return (
-//     <div className="one-pound-adv">
-//       <h2 className="adv-title">Special Offer: Manual & Automated Testing</h2>
-//       <p className="adv-description">
-//         Get manual tests for just £1, unit tests for £1, integration tests for £3, and end-to-end tests for £5. 
-//         Ensure your software works flawlessly with our expert testing services at unbeatable prices.
-//       </p>
-//       <div className="action-buttons">
-//         <a href="tel:+YourPhoneNumber" className="btn">Call Us Now</a>
-//         <a href="mailto:YourEmail@example.com" className="btn">Email Us</a>
-//       </div>
-//       <p className="adv-footer">Leave your phone number, and we'll call you back. Or, leave your email, and we'll get in touch shortly.</p>
-//     </div>
-//   );
-// };
-// export default OnePoundAdv;
