@@ -8,7 +8,6 @@ import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
 import HeroSection from "../../components/Herosection/HeroSection";
 import TestCalculator from "../../components/TestCalculator/TestCalculator"
 import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
-import TestingCostCalculator from '../../components/TestingCostCalculator/TestingCostCalculator';
 import './home.scss';
 
 function Home() {
