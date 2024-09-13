@@ -60,7 +60,7 @@ const OnePoundAdv = () => {
       )}
 
       <div className="adv-header">
-        <h2 className="adv-title">Special Offer: Testing Services <br/><br/> with Big Discounts!</h2>
+        <h2 className="adv-title">Special Offer: Testing Services with Big Discounts!</h2>
         <TbCoins className="svg-offer-icon" />
       </div>
       
