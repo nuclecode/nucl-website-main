@@ -26,6 +26,10 @@
       font-size: 1.5rem;
       color: #333;
       margin-bottom: 10px;
+
+      h2 {
+        line-height: 1.6;
+      }
   }
 
   .adv-description {
@@ -164,9 +168,13 @@
           flex-direction: row; 
           justify-content: center;
 
+          h2 {
+            line-height: 1.6;
+          }
+
           .svg-offer-icon {
-              width: 50px; 
-              height: 50px;
+              width: 150px; 
+              height: 150px;
               margin-left: 10px;
           }
       }
