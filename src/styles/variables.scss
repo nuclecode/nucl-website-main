@@ -1,39 +1,92 @@
 @import 'spacing.scss';
+// TYPOGRAPHY
+// Fonts
+$font-heading: 'IBM Plex Sans', sans-serif;
+$font-body: 'Inter', sans-serif;
+$font-monospace: 'Fira Code', monospace;
 
-$site-default-font-family: "Coustard", serif;
-$site-alt-font-family: 'Tenor Sans', sans-serif;
-$site-default-font-size: 16px;
-$site-default-mobile-font-size: 14px;
+// Font weights
 $site-regular: 400;
-$site-bold: 900;
+$site-bold: 700;
+$font-semibold-weight: 600;
 $material-icons: 'Material Icons';
 
+// Font sizes
+$site-default-font-size: 16px;
+$site-h2-font-size: 26px;
+$site-default-mobile-font-size: 14px;
+
+// FONT FAMILY VARIABLES
+$site-default-font-family: $font-body;
+$site-alt-font-family: $font-heading;
+$site-special-text: $font-monospace;
+
+
 // common colors
-$site-text-color: #424242;
-$site-headline-color: #212121;
-$site-background-color: #fcf9fd;
+$site-background-color: #f0f4f8;
+$site-headline-color: #0a192f; // Dark Blue for headlines
+// COLOR SCHEME
+// Primary
+$color-primary: #0a192f; // Dark Blue for headlines
+$color-secondary: #00ff99; // Neon Green
 
-$error-color: red;
+// Accent
+$color-accent: #0077ff; // Electric Blue
+$color-accent-light: #00bcd4; // Soft Cyan
 
-$link-color: #f06422;
-$link-color-hover: #f9992c;
-$link-color-focus: #f9992c;
-$link-color-active: #dc531e;
+// Neutrals
+$site-text-color: #2e2e2e; // Charcoal Gray for body
+$color-neutral-light: #b0bec5; // Silver Gray
+$color-background: #f0f4f8; // Soft White
 
-// buttons
-$button-color: rgb(240, 100, 34);
-$button-contained-color-hover: #f9992c;
-$button-contained-color-focus: #f9992c;
-$button-outlined-color-hover: transparent;
-$button-outlined-color-focus: transparent;
-$button-outlined-border-color-hover: #f9992c;
-$button-outlined-border-color-focus: #f9992c;
-$button-text-color-hover: #f9992c;
-$button-text-color-focus: #f9992c;
-$button-outlined-border-color-active: #dc531e;
-$button-background-color-inactive: #f5f5f5;
-$button-background-color-disabled: #bdbdbd;
-$button-color-disabled: #757575;
+
+
+$error-color: #7b010b;
+//
+//$link-color: #f06422;
+//$link-color-hover: #f9992c;
+//$link-color-focus: #f9992c;
+//$link-color-active: #dc531e;
+//
+//// buttons
+//$button-color: rgb(240, 100, 34);
+//$button-contained-color-hover: #f9992c;
+//$button-contained-color-focus: #f9992c;
+//$button-outlined-color-hover: transparent;
+//$button-outlined-color-focus: transparent;
+//$button-outlined-border-color-hover: #f9992c;
+//$button-outlined-border-color-focus: #f9992c;
+//$button-text-color-hover: #f9992c;
+//$button-text-color-focus: #f9992c;
+//$button-outlined-border-color-active: #dc531e;
+//$button-background-color-inactive: #f5f5f5;
+//$button-background-color-disabled: #bdbdbd;
+//$button-color-disabled: #757575;
+// Error color
+$error-color: #ff4d4f;
+
+// Link colors
+$link-color: #0077cc; // Vibrant Blue for primary links
+$link-color-hover: #005ea3; // Slightly darker blue for hover state
+$link-color-focus: #005ea3;
+$link-color-active: #004080; // Darker blue for active state
+// Buttons
+$button-color: linear-gradient(45deg, #f2642c, #dc531e); // Gradient for buttons
+$button-contained-color-hover: linear-gradient(45deg, #dc531e, #f2642c); // Gradient for hover state
+$button-contained-color-focus: linear-gradient(45deg, #ff4e50, #f9d423); // Alternative gradient for focus state
+$button-outlined-color-hover: transparent; // Outlined button background on hover
+$button-outlined-color-focus: transparent; // Outlined button background on focus
+$button-outlined-border-color: #f2642c;
+$button-outlined-border-color-hover: #dc531e; // Orange border for hover on outlined buttons
+$button-outlined-border-color-focus: #f2642c; // Orange border for focus on outlined buttons
+$button-outlined-text-color: #f2642c;
+$button-outlined-text-color-hover: #dc531e;
+$button-text-color-hover: #ffffff; // White text color on hover
+$button-text-color-focus: #ffffff; // White text color on focus
+$button-outlined-border-color-active: #dc531e; // Darker orange border on active state
+$button-background-color-inactive: #f5f5f5; // Light gray for inactive button background
+$button-background-color-disabled: #bdbdbd; // Light gray for disabled background
+$button-color-disabled: #757575; // Disabled text color
 
 // responsive breakpoints
 $breakpoint-xs-down: 320px;
