@@ -10,12 +10,14 @@ import TestCalculator from "../../components/TestCalculator/TestCalculator"
 import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
 import './home.scss';
 import DemoHero from '../../components/demoHero/DemoHero';
+import CarouselStack from "../../components/carouselStack/CarouselStack";
 // import FormFooter from "../../components/formFooter/FormFooter";
 
 function Home() {
 	return (
 		<Layout>
 			<DemoHero />
+			<CarouselStack />
 			<HeroSection />
 			<div className="home-page-container page-top-space">
 
