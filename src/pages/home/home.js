@@ -6,6 +6,8 @@ import ReadyToStart from '../../components/readyToStart/readyToStart';
 import OurServices from '../../components/ourServices/ourServices';
 import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
 import HeroSection from "../../components/Herosection/HeroSection";
+import TestCalculator from "../../components/TestCalculator/TestCalculator"
+import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
 import './home.scss';
 import DemoHero from '../../components/demoHero/DemoHero';
 import FormFooter from "../../components/formFooter/FormFooter";
@@ -39,6 +41,13 @@ function Home() {
 						</a>
 					</page-section>
 
+				<div className="home-page-adv-container">
+					
+						<OnePoundAdv />
+						<TestCalculator />
+					
+				</div>
+
 					<page-section>
 						<OurServices />
 					</page-section>
@@ -54,6 +63,7 @@ function Home() {
 					<FormFooter />
 				</div>
 			</div>
+			
 		</Layout>
 	);
 }
