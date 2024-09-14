@@ -10,7 +10,7 @@ import TestCalculator from "../../components/TestCalculator/TestCalculator"
 import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
 import './home.scss';
 import DemoHero from '../../components/demoHero/DemoHero';
-import FormFooter from "../../components/formFooter/FormFooter";
+// import FormFooter from "../../components/formFooter/FormFooter";
 
 function Home() {
 	return (
@@ -60,7 +60,7 @@ function Home() {
 						<ReadyToStart />
 					</page-section>
 
-					<FormFooter />
+					{/*<FormFooter />*/}
 				</div>
 			</div>
 			
