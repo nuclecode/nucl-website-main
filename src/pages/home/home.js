@@ -7,7 +7,7 @@ import OurServices from '../../components/ourServices/ourServices';
 import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
 import HeroSection from "../../components/Herosection/HeroSection";
 import TestCalculator from "../../components/TestCalculator/TestCalculator"
-import OnePoundAdv from '../../components/OnePoundAdv/OnePoundAdv';
+import OnePoundAdvert from '../../components/OnePoundAdvert/OnePoundAdvert';
 import './home.scss';
 
 function Home() {
@@ -40,7 +40,7 @@ function Home() {
 
 				<div className="home-page-adv-container">
 					
-						<OnePoundAdv />
+						<OnePoundAdvert />
 						<TestCalculator />
 					
 				</div>

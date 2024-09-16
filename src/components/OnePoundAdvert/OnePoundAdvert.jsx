@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './OnePoundAdv.scss';
+import './OnePoundAdvert.scss';
 import { TbCoins } from "react-icons/tb";
 import { PiCoinVerticalLight, PiHandCoinsDuotone } from "react-icons/pi";
 import { db } from '../../firebaseConfig';
@@ -7,7 +7,7 @@ import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { Snackbar, Alert } from '@mui/material'; 
 
 
-const OnePoundAdv = () => {
+const OnePoundAdvert = () => {
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [showAlert, setShowAlert] = useState(false);
@@ -115,4 +115,4 @@ const OnePoundAdv = () => {
   );
 };
 
-export default OnePoundAdv;
+export default OnePoundAdvert;
