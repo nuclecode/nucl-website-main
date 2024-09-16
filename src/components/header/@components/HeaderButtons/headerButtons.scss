@@ -1,6 +1,59 @@
 @import '../../../../styles/variables.scss';
 
+// Container for the header buttons
 .header-buttons-container {
 	display: flex;
 	justify-content: flex-end;
+
+	// Style for the outlined button
+	.MuiButton-outlined {
+		background-color: transparent; // Transparent background for outlined button
+		border: 2px solid $button-outlined-border-color-hover; // Use orange border
+		color: $button-color; // Default text color (black)
+
+		&:hover,
+		&:hover:enabled,
+		&:hover:active,
+		&:hover:active:enabled {
+			background-color: $button-outlined-color-hover; // Transparent background on hover
+			border-color: $button-outlined-border-color-hover; // Orange border on hover
+			color: $button-text-color-hover; // White text on hover
+		}
+
+		&:focus,
+		&:focus:enabled {
+			background-color: $button-outlined-color-focus; // Transparent background on focus
+			border-color: $button-outlined-border-color-focus; // Orange border on focus
+			color: $button-text-color-focus; // White text on focus
+		}
+
+		&:active,
+		&:active:enabled,
+		&:active:focus,
+		&:active:focus:enabled {
+			background-color: transparent; // Transparent background on active state
+			border-color: $button-outlined-border-color-active; // Darker orange border on active state
+			color: $button-outlined-border-color-active; // Darker orange text on active state
+		}
+
+		&:disabled,
+		&:hover:disabled,
+		&:active:disabled,
+		&:focus:disabled,
+		&:hover:active:disabled,
+		&.disabled,
+		&.disabled:hover,
+		&.disabled:active,
+		&.disabled:focus,
+		&.Mui-disabled,
+		&.Mui-disabled:hover,
+		&.Mui-disabled:active,
+		&.Mui-disabled:focus,
+		&.Mui-disabled:active:focus {
+			border-color: $button-color-disabled; // Border color for disabled state
+			color: $button-color-disabled; // Text color for disabled state
+			cursor: not-allowed;
+			pointer-events: inherit;
+		}
+	}
 }

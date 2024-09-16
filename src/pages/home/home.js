@@ -9,10 +9,15 @@ import HeroSection from "../../components/Herosection/HeroSection";
 import TestCalculator from "../../components/TestCalculator/TestCalculator"
 import OnePoundAdvert from '../../components/OnePoundAdvert/OnePoundAdvert';
 import './home.scss';
+import DemoHero from '../../components/demoHero/DemoHero';
+import CarouselStack from "../../components/carouselStack/CarouselStack";
+// import FormFooter from "../../components/formFooter/FormFooter";
 
 function Home() {
 	return (
 		<Layout>
+			<DemoHero />
+			<CarouselStack />
 			<HeroSection />
 			<div className="home-page-container page-top-space">
 
@@ -56,6 +61,8 @@ function Home() {
 					<page-section>
 						<ReadyToStart />
 					</page-section>
+
+					{/*<FormFooter />*/}
 				</div>
 			</div>
 			
