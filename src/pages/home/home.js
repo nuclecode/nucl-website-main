@@ -12,7 +12,7 @@ import './home.scss';
 import DemoHero from '../../components/demoHero/DemoHero';
 import CarouselStack from "../../components/carouselStack/CarouselStack";
 // import FormFooter from "../../components/formFooter/FormFooter";
-
+import PrimaryForm from "../../components/primaryContactForm/PrimaryForm";
 function Home() {
 	return (
 		<Layout>
@@ -62,7 +62,7 @@ function Home() {
 						<ReadyToStart />
 					</page-section>
 
-					{/*<FormFooter />*/}
+					<PrimaryForm />
 				</div>
 			</div>
 			

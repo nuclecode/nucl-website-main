@@ -1,0 +1,104 @@
+.PrimaryFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin: 0;
+}
+
+.ctaText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.ctaText h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.ctaText p {
+  font-size: 1rem;
+  line-height: 1.4;
+  padding-top: 10px;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+input:focus {
+  border-bottom: 2px solid #3a86ff;
+  box-shadow: 0 1px 0 0 #3a86ff;
+}
+
+input:hover {
+  border-bottom: 2px solid #aaa;
+}
+
+.termsConditions {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .PrimaryFormContainer {
+    flex-direction: row;
+    height: 100vh;
+    padding-top: 50px;
+  }
+
+  .ctaText {
+    max-width: 50%;
+    padding: 2rem;
+  }
+
+  .ctaText h1 {
+    font-size: 2.5rem;
+  }
+
+  .ctaText p {
+    font-size: 1.125rem;
+    padding-top: 20px;
+  }
+
+  .formWrapper {
+    padding: 2rem;
+  }
+
+  form {
+    max-width: 500px;
+  }
+}
