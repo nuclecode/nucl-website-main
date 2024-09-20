@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Layout from '../../layout/layout';
 import { Typography, Button } from '@mui/material';
