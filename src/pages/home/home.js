@@ -13,6 +13,8 @@ import DemoHero from '../../components/demoHero/DemoHero';
 import CarouselStack from "../../components/carouselStack/CarouselStack";
 // import FormFooter from "../../components/formFooter/FormFooter";
 import PrimaryForm from "../../components/primaryContactForm/PrimaryForm";
+import ProcessSection from "../../components/processSection/ProcessSection";
+
 function Home() {
 	return (
 		<Layout>
@@ -54,14 +56,15 @@ function Home() {
 						<OurServices />
 					</page-section>
 
-					<page-section>
-						<AboutNuclecode />
-					</page-section>
+					{/*<page-section>*/}
+					{/*	<AboutNuclecode />*/}
+					{/*</page-section>*/}
 
-					<page-section>
-						<ReadyToStart />
-					</page-section>
+					{/*<page-section>*/}
+					{/*	<ReadyToStart />*/}
+					{/*</page-section>*/}
 
+					<ProcessSection />
 					<PrimaryForm />
 				</div>
 			</div>
