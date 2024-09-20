@@ -1,43 +1,47 @@
 import React from 'react';
-import './CarouselStack.scss';
+import Slider from 'react-slick';
 import { FaReact, FaNodeJs, FaAws, FaSass } from 'react-icons/fa';
-import { SiPostgresql, SiMongodb } from 'react-icons/si';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './CarouselStack.scss';
+import { SiMongodb, SiCypress, SiPostgresql } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiCypress } from "react-icons/si";
-const CarouselStack = () => {
-    const logos = [
-        <FaReact size={60} />,
-        <RiNextjsFill size={60} />,
-        <SiCypress size={60} />,
-        <FaNodeJs size={60} />,
-        <FaSass size={60} />,
-        <FaAws size={60} />,
-        <SiPostgresql size={60} />,
-        <SiMongodb size={60} />,
-    ];
 
+const icons = [
+    <FaReact />,
+    <RiNextjsFill />,
+    <SiCypress />,
+    <FaNodeJs />,
+    <FaSass />,
+    <FaAws />,
+    <SiPostgresql />,
+    <SiMongodb />,
+];
+
+const CarouselIcons = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 10000,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1,
+        cssEase: "linear",
+        arrows: false,
+        pauseOnHover: false,
+        pauseOnFocus: false
+    };
 
     return (
-        <div className="carousel-wrapper">
-            <h2 className="carousel-title">Our Stack</h2>
-            <div className="carousel-container">
-                <div className="carousel-inner">
-                    {logos.map((logo, index) => (
-                        <div className="carousel-item" key={index}>
-                            {logo}
-                        </div>
-                    ))}
+        <Slider {...settings}>
+            {icons.map((icon, index) => (
+                <div key={index} className="carousel-item">
+                    {icon}
                 </div>
-                <div className="carousel-inner">
-                    {logos.map((logo, index) => (
-                        <div className="carousel-item" key={`duplicate-${index}`}>
-                            {logo}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
+            ))}
+        </Slider>
     );
 };
 
-export default CarouselStack;
+export default CarouselIcons;

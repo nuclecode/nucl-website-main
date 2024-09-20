@@ -1,59 +1,32 @@
-.carousel-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px 0;
-}
-
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
+.carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
-
-  &:hover .carousel-inner {
-    animation-play-state: paused;
-  }
+  padding: 5px;
+  font-size: 5rem;
+  color: #010E54;
 }
 
- h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  padding-left: 20px;
+.slick-slider {
+  overflow: hidden;
 }
-.carousel-inner {
+
+.slick-track {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: calc(100% * 2);
-  animation: scroll 15s linear infinite;
+  align-items: center;
 }
 
-.carousel-item {
-  min-width: 100px;
-  margin: 0 20px;
-  flex: 0 0 100px;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.duplicate {
+.slick-slide {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slick-list {
+  pointer-events: none;
 }
