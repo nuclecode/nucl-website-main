@@ -15,6 +15,7 @@ import CarouselStack from "../../components/carouselStack/CarouselStack";
 import PrimaryForm from "../../components/primaryContactForm/PrimaryForm";
 import ProcessSection from "../../components/processSection/ProcessSection";
 // import Blog from "../blog/Blog";
+import AnimatedChart from "../../components/chart/AnimatedChart";
 
 function Home() {
 	return (
@@ -51,7 +52,7 @@ function Home() {
 						<TestCalculator />
 					
 				</div>
-
+				<AnimatedChart />
 					<page-section>
 						<OurServices />
 					</page-section>
