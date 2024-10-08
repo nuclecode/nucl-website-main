@@ -3,6 +3,7 @@ import './resources.scss';
 import Layout from '../../layout/layout';
 import Glossary from '../../components/Glossary/Glossary';
 import Syllabus from '../../components/Syllabus/Syllabus';
+import HeroSection from "../../components/Herosection/HeroSection";
 
 function Resources() {
     const placeholders = new Array(8).fill(null);
@@ -13,6 +14,7 @@ function Resources() {
                 <h1>Our Resources</h1>
                 <Syllabus />
                 <Glossary />
+                <HeroSection />
                 <section className="video-grid">
                     {placeholders.map((_, index) => (
                         <div key={index} className="video-card placeholder">
