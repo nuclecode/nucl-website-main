@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@emotion/react';
 import nuclecodeTheme from './styles/nuclecodeTheme';
+import 'aos/dist/aos.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

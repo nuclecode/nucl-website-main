@@ -3,6 +3,7 @@ import { CgMouse } from 'react-icons/cg';
 import { PiHandTap } from 'react-icons/pi';
 import './DemoHero.scss';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
 
 const DemoHero = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -14,16 +15,21 @@ const DemoHero = () => {
         window.addEventListener('resize', handleResize);
     }, []);
 
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+
     return (
         <section className="pageContainer">
             <div className="heroContainer">
-                <div className="heroTitle">
+                <div className="heroTitle" data-aos="fade-up">
                     <h1>Proper business software</h1>
                 </div>
-                <div className="heroParagraph">
+                <div className="heroParagraph" data-aos="fade-up" data-aos-delay="200">
                     Expert systems design at any scale with automated test coverage and CI/CD pipeline.
                 </div>
-                <div className="heroBtnContainer">
+                <div className="heroBtnContainer" data-aos="fade-up" data-aos-delay="400">
                     <Link to="/contact">
                         <button className="btn-lets-chat">
                             Let's chat
@@ -37,7 +43,7 @@ const DemoHero = () => {
                 </div>
             </div>
 
-            <div className="scroll-indicator">
+            <div className="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
                 {isMobile ? <PiHandTap size={40}/> : <CgMouse size={40}/>}
             </div>
         </section>
