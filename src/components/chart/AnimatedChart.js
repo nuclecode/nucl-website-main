@@ -70,13 +70,16 @@ const CustomActiveShapePieChart = () => {
             { threshold: 0.3 }
         );
 
-        if (chartRef.current) {
-            observer.observe(chartRef.current);
+
+        const currentChartRef = chartRef.current;
+
+        if (currentChartRef) {
+            observer.observe(currentChartRef);
         }
 
         return () => {
-            if (chartRef.current) {
-                observer.unobserve(chartRef.current);
+            if (currentChartRef) {
+                observer.unobserve(currentChartRef);
             }
         };
     }, []);
