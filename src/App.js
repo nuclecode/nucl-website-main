@@ -13,7 +13,7 @@ import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
 import MarketingEmail from './pages/marketingEmail/marketingEmail';
 import Resources from './pages/resources/resources';
 import { Helmet } from 'react-helmet';
-// import BlogPost from "./pages/BlogPost/BlogPost";
+import BlogPost from "./pages/BlogPost/BlogPost";
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
 // import Case3 from './components/case-studies/Case3';
@@ -46,7 +46,7 @@ function App() {
 					<Route path="/schedule-a-call" element={<EnquiryForm />} />
 					<Route path="/have-us-call-you" element={<HaveUsCallYou />} />
 					<Route path="/resources" element={<Resources />} />
-					<Route path="/blog" element={<Blog />} />
+					{/*<Route path="/blog" element={<Blog />} />*/}
 					{/*<Route path="/blog/:id" element={<BlogPost />} />*/}
 				</Routes>
 				<Routes>
