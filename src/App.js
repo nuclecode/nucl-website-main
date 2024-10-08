@@ -13,10 +13,11 @@ import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
 import MarketingEmail from './pages/marketingEmail/marketingEmail';
 import Resources from './pages/resources/resources';
 import { Helmet } from 'react-helmet';
-
+import BlogPost from "./pages/BlogPost/BlogPost";
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
 // import Case3 from './components/case-studies/Case3';
+import Blog from './pages/blog/Blog';
 
 function App() {
 
@@ -32,11 +33,12 @@ function App() {
 						gtag('config', 'G-E5N4D8RK5M');
 					`}
 				</script>
+				<script src="//code.tidio.co/fyq1apam6wmtjp8xebfds6kbunwbjfly.js" async></script>
 			</Helmet>
 
 			<Router>
 				<Routes>
-					<Route path="/" exact element={<Home />} />
+					<Route path="/" exact element={<Home/>}/>
 					{/* <Route path="/portfolio" element={<Portfolio />} /> */}
 					<Route path="/solutions" element={<Solutions />} />
 					<Route path="/about" element={<About />} />
@@ -44,6 +46,8 @@ function App() {
 					<Route path="/schedule-a-call" element={<EnquiryForm />} />
 					<Route path="/have-us-call-you" element={<HaveUsCallYou />} />
 					<Route path="/resources" element={<Resources />} />
+					<Route path="/blog" element={<Blog />} />
+					<Route path="/blog/:id" element={<BlogPost />} />
 				</Routes>
 				<Routes>
 					<Route path="/solutions/frontend" element={<Frontend />} />
