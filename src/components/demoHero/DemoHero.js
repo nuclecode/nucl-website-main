@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CgMouse } from 'react-icons/cg';
 import { PiHandTap } from 'react-icons/pi';
 import './DemoHero.scss';
+import { Link } from 'react-router-dom';
 
 const DemoHero = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -23,12 +24,16 @@ const DemoHero = () => {
                     Expert systems design at any scale with automated test coverage and CI/CD pipeline.
                 </div>
                 <div className="heroBtnContainer">
-                <button className="btn-lets-chat">
-                    Let's chat
-                </button>
-                <button className="btn-portfolio">
-                    Portfolio
-                </button>
+                    <Link to="/contact">
+                        <button className="btn-lets-chat">
+                            Let's chat
+                        </button>
+                    </Link>
+                    <Link to="/demos">
+                        <button className="btn-portfolio">
+                            Demos
+                        </button>
+                    </Link>
                 </div>
             </div>
 

@@ -61,6 +61,10 @@ function Hamburger() {
 							<li>Resources</li>
 						</a>
 
+						<a href="/demos">
+							<li>Demos</li>
+						</a>
+
 						<a href="/schedule-a-call">
 							<li>
 								<Button variant="outlined">Book a chat</Button>
