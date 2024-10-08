@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React from 'react';
 import Slider from 'react-slick';
 import { FaReact, FaNodeJs, FaAws, FaSass } from 'react-icons/fa';
@@ -30,7 +31,27 @@ const CarouselIcons = () => {
         cssEase: "linear",
         arrows: false,
         pauseOnHover: false,
-        pauseOnFocus: false
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+        ],
     };
 
     return (
