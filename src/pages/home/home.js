@@ -14,7 +14,7 @@ import CarouselStack from "../../components/carouselStack/CarouselStack";
 // import FormFooter from "../../components/formFooter/FormFooter";
 import PrimaryForm from "../../components/primaryContactForm/PrimaryForm";
 import ProcessSection from "../../components/processSection/ProcessSection";
-import Blog from "../blog/Blog";
+// import Blog from "../blog/Blog";
 
 function Home() {
 	return (
@@ -68,7 +68,7 @@ function Home() {
 
 					<PrimaryForm />
 
-					<Blog />
+					{/*<Blog />*/}
 				</div>
 			{/*</div>*/}
 			
