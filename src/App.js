@@ -13,11 +13,11 @@ import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
 import MarketingEmail from './pages/marketingEmail/marketingEmail';
 import Resources from './pages/resources/resources';
 import { Helmet } from 'react-helmet';
-import BlogPost from "./pages/BlogPost/BlogPost";
+// import BlogPost from "./pages/BlogPost/BlogPost";
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
 // import Case3 from './components/case-studies/Case3';
-import Blog from './pages/blog/Blog';
+// import Blog from './pages/blog/Blog';
 
 function App() {
 
