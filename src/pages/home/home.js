@@ -6,8 +6,8 @@ import SpiralImage from '../../assets/images/home-spiral.png';
 import ReadyToStart from '../../components/readyToStart/readyToStart';
 import OurServices from '../../components/ourServices/ourServices';
 import AboutNuclecode from '../../components/aboutNuclecode/aboutNuclecode';
-import TestCalculator from "../../components/TestCalculator/TestCalculator"
-import OnePoundAdvert from '../../components/OnePoundAdvert/OnePoundAdvert';
+// import TestCalculator from "../../components/TestCalculator/TestCalculator"
+// import OnePoundAdvert from '../../components/OnePoundAdvert/OnePoundAdvert';
 import './home.scss';
 import DemoHero from '../../components/demoHero/DemoHero';
 import CarouselStack from "../../components/carouselStack/CarouselStack";
@@ -46,12 +46,12 @@ function Home() {
 				{/*		</a>*/}
 				{/*	</page-section>*/}
 
-				<div className="home-page-adv-container">
-					
-						<OnePoundAdvert />
-						<TestCalculator />
-					
-				</div>
+				{/*<div className="home-page-adv-container">*/}
+				{/*	*/}
+				{/*		<OnePoundAdvert />*/}
+				{/*		<TestCalculator />*/}
+				{/*	*/}
+				{/*</div>*/}
 				<AnimatedChart />
 					<page-section>
 						<OurServices />
