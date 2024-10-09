@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import Home from './pages/home/home';
 import Solutions from './pages/solutions/solutions';
@@ -14,6 +14,8 @@ import MarketingEmail from './pages/marketingEmail/marketingEmail';
 import Resources from './pages/resources/resources';
 import { Helmet } from 'react-helmet';
 import Demos from './pages/demos/Demos';
+import AOS from 'aos';
+import CalculateTests from "./pages/calculate-your-tests/CalculateTests";
 // import BlogPost from "./pages/BlogPost/BlogPost";
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
@@ -21,7 +23,12 @@ import Demos from './pages/demos/Demos';
 // import Blog from './pages/blog/Blog';
 
 function App() {
-
+	useEffect(() => {
+		AOS.init({
+			duration: 1000,
+			once: true,
+		});
+	}, []);
 	return (
         <>
 			<Helmet>
@@ -38,38 +45,41 @@ function App() {
 			</Helmet>
 
 			<Router>
-				<Routes>
-					<Route path="/" exact element={<Home/>}/>
-					{/* <Route path="/portfolio" element={<Portfolio />} /> */}
-					<Route path="/solutions" element={<Solutions />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/schedule-a-call" element={<EnquiryForm />} />
-					<Route path="/have-us-call-you" element={<HaveUsCallYou />} />
-					<Route path="/resources" element={<Resources />} />
-					<Route path="/demos" element={<Demos />} />
-					{/*<Route path="/blog" element={<Blog />} />*/}
-					{/*<Route path="/blog/:id" element={<BlogPost />} />*/}
-				</Routes>
-				<Routes>
-					<Route path="/solutions/frontend" element={<Frontend />} />
-					<Route path="/solutions/backend" element={<Backend />} />
-					<Route path="/solutions/testing" element={<Testing />} />
-				</Routes>
-				{/* <Routes>
+						<Routes>
+							<Route path="/" exact element={<Home/>}/>
+							{/* <Route path="/portfolio" element={<Portfolio />} /> */}
+							<Route path="/solutions" element={<Solutions/>}/>
+							<Route path="/about" element={<About/>}/>
+							<Route path="/contact" element={<Contact/>}/>
+							<Route path="/schedule-a-call" element={<EnquiryForm/>}/>
+							<Route path="/have-us-call-you" element={<HaveUsCallYou/>}/>
+							<Route path="/resources" element={<Resources/>}/>
+							<Route path="/demos" element={<Demos/>}/>
+							{/*<Route path="/blog" element={<Blog />} />*/}
+							{/*<Route path="/blog/:id" element={<BlogPost />} />*/}
+						</Routes>
+						<Routes>
+							<Route path="/calculate-your-tests" element={<CalculateTests/>}/>
+						</Routes>
+						<Routes>
+							<Route path="/solutions/frontend" element={<Frontend/>}/>
+							<Route path="/solutions/backend" element={<Backend/>}/>
+							<Route path="/solutions/testing" element={<Testing/>}/>
+						</Routes>
+						{/* <Routes>
 					<Route path="/case1" element={<Case1 />} />
 					<Route path="/case2" element={<Case2 />} />
 					<Route path="/case3" element={<Case3 />} />
 				</Routes> */}
-				<Routes>
-					<Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-				</Routes>
-				<Routes>
-					<Route path="/sell-online" element={<MarketingEmail />} />
-				</Routes>
+						<Routes>
+							<Route path="/terms-and-conditions" element={<TermsAndConditions/>}/>
+						</Routes>
+						<Routes>
+							<Route path="/sell-online" element={<MarketingEmail/>}/>
+						</Routes>
 			</Router>
 		</>
-	);
+);
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './TestingCalc.module.scss'; // Import the SCSS module
 
 const TestingCostCalculator = () => {
   const [testCases, setTestCases] = useState(0);
@@ -13,80 +14,48 @@ const TestingCostCalculator = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <h2>Testing Cost Calculator</h2>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Testing Cost Calculator</h2>
 
-      <div style={styles.inputGroup}>
-        <label>Number of Test Cases:</label>
-        <input
-          type="number"
-          value={testCases}
-          onChange={(e) => setTestCases(e.target.value)}
-          style={styles.input}
-        />
-      </div>
-
-      <div style={styles.inputGroup}>
-        <label>Hourly Rate (£):</label>
-        <input
-          type="number"
-          value={hourlyRate}
-          onChange={(e) => setHourlyRate(e.target.value)}
-          style={styles.input}
-        />
-      </div>
-
-      <div style={styles.inputGroup}>
-        <label>Hours per Test Case:</label>
-        <input
-          type="number"
-          value={hoursPerTestCase}
-          onChange={(e) => setHoursPerTestCase(e.target.value)}
-          style={styles.input}
-        />
-      </div>
-
-      <button onClick={calculateCost} style={styles.button}>Calculate Cost</button>
-
-      {totalCost > 0 && (
-        <div style={styles.result}>
-          <h3>Total Estimated Cost: £{totalCost.toFixed(2)}</h3>
+        <div className={styles.inputGroup}>
+          <label>Number of Test Cases:</label>
+          <input
+              type="number"
+              value={testCases}
+              onChange={(e) => setTestCases(e.target.value)}
+              className={styles.input}
+          />
         </div>
-      )}
-    </div>
-  );
-};
 
-const styles = {
-  container: {
-    maxWidth: '400px',
-    margin: '0 auto',
-    padding: '20px',
-    border: '1px solid #ccc',
-    borderRadius: '8px',
-    textAlign: 'center',
-  },
-  inputGroup: {
-    marginBottom: '10px',
-  },
-  input: {
-    width: '100%',
-    padding: '8px',
-    marginTop: '5px',
-    borderRadius: '4px',
-    border: '1px solid #ccc',
-  },
-  button: {
-    padding: '10px 20px',
-    backgroundColor: '#007bff',
-    color: 'white',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-  },
-  result: {
-    marginTop: '20px',
-  },
+        <div className={styles.inputGroup}>
+          <label>Hourly Rate (£):</label>
+          <input
+              type="number"
+              value={hourlyRate}
+              onChange={(e) => setHourlyRate(e.target.value)}
+              className={styles.input}
+          />
+        </div>
+
+        <div className={styles.inputGroup}>
+          <label>Hours per Test Case:</label>
+          <input
+              type="number"
+              value={hoursPerTestCase}
+              onChange={(e) => setHoursPerTestCase(e.target.value)}
+              className={styles.input}
+          />
+        </div>
+
+        <button onClick={calculateCost} className={styles.button}>Calculate Cost</button>
+
+        {totalCost > 0 && (
+            <div className={styles.result}>
+              <h3>Total Estimated Cost: £{totalCost.toFixed(2)}</h3>
+            </div>
+        )}
+      </div>
+  );
 };
 
 export default TestingCostCalculator;

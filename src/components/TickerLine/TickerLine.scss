@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+
+:root {
+  --animationDistance: -100px; // This will be dynamically updated
+  --animationDuration: 12s; // Default duration
+}
+
+.wrapper {
+  position: sticky; // Make the ticker sticky
+  top: 0; // Stick to the top
+  width: 100vw; // Full width
+  white-space: nowrap;
+  overflow: hidden;
+  background: $color-accent;
+  z-index: 1000;
+  cursor: pointer;
+
+
+  &:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.inner {
+  animation-duration: var(--animationDuration);
+  animation-timing-function: linear;
+}
+
+.inner.moving {
+  animation-name: moveticker;
+}
+
+.element {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  z-index: 3;
+}
+
+@keyframes moveticker {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(var(--animationDistance));
+  }
+}
+

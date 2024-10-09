@@ -2,7 +2,7 @@ import { HeaderType, FooterType } from '../libs/enums';
 import Header from '../components/header/header';
 import MinimalHeader from '../components/header/minimalHeader';
 import Footer from '../components/footer/footer';
-
+import TickerLine from "../components/TickerLine/TickerLine";
 const PageHeader = ({header}) => {
 	if (header === HeaderType.Minimal) {
 		return <MinimalHeader />;
@@ -32,6 +32,7 @@ function Layout({
 
 	return (
 		<div className="page-container">
+			<TickerLine />
 			<PageHeader header={header} />
 			{children}
 			<PageFooter footer={footer} />
