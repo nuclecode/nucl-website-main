@@ -16,6 +16,7 @@ import { Helmet } from 'react-helmet';
 import Demos from './pages/demos/Demos';
 import AOS from 'aos';
 import CalculateTests from "./pages/calculate-your-tests/CalculateTests";
+import Showcase from "./pages/Showcase/Showcase";
 // import BlogPost from "./pages/BlogPost/BlogPost";
 // import Case1 from './components/case-studies/Case1';
 // import Case2 from './components/case-studies/Case2';
@@ -47,7 +48,7 @@ function App() {
 			<Router>
 						<Routes>
 							<Route path="/" exact element={<Home/>}/>
-							{/* <Route path="/portfolio" element={<Portfolio />} /> */}
+							<Route path="/showcase" exact element={<Showcase/>}/>
 							<Route path="/solutions" element={<Solutions/>}/>
 							<Route path="/about" element={<About/>}/>
 							<Route path="/contact" element={<Contact/>}/>
