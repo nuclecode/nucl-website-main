@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef, useCallback } from "react";
-import './TickerLine.scss'; // Import your SCSS file here
+import React, { useState, useRef, useCallback } from "react";
+import './TickerLine.scss';
 
 const newsItems = [
     { key: "🚨 Special Offer: Testing Services with Up to 50% Off! 🚨" },
@@ -27,17 +27,24 @@ const Ticker = () => {
         }
     }, [items]);
 
+
     const handleLoop = () => {
         wrapperRef.current.classList.remove('moving');
         wrapperRef.current.style.animation = 'none';
-        const t = wrapperRef.current.offsetHeight; /* trigger reflow */
-        wrapperRef.current.style.animation = null;
-        shiftNext([...items]);
+
+        setTimeout(() => {
+            // Trigger reflow with an IIFE
+            (() => wrapperRef.current.offsetHeight)();
+            wrapperRef.current.style.animation = null; // Reset animation
+            shiftNext([...items]);
+        }, 0);
     };
+
+
 
     const shiftNext = (copy) => {
         const firstitem = copy.shift();
-        copy.push(firstitem); // Moved the item to the end
+        copy.push(firstitem);
         setItems(copy);
     };
 

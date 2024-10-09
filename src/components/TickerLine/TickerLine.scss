@@ -4,14 +4,17 @@
 
 
 :root {
-  --animationDistance: -100px; // This will be dynamically updated
-  --animationDuration: 12s; // Default duration
+  --animationDistance: -100px;
+  --animationDuration: 12s;
 }
 
 .wrapper {
-  position: sticky; // Make the ticker sticky
-  top: 0; // Stick to the top
-  width: 100vw; // Full width
+  position: sticky;
+  top: 0;
+  left: 0; // Aligns to the left side
+  right: 0; // Extends to the right
+  padding: 10px 0;
+  width: 100vw;
   white-space: nowrap;
   overflow: hidden;
   background: $color-accent;
@@ -29,6 +32,8 @@
 }
 
 .inner {
+  display: flex;
+  white-space: nowrap;
   animation-duration: var(--animationDuration);
   animation-timing-function: linear;
 }
