@@ -7,7 +7,7 @@ function DesktopMenu() {
 			<div className="item"><a href="/showcase">Showcase</a></div>
 			<div className="item"><a href="/demos">Demos</a></div>
 			<div className="item"><a href="/solutions">Solutions</a></div>
-			<div className="item"><a href="/services">Services</a></div>
+			{/*<div className="item"><a href="/services">Services</a></div>*/}
 			<div className="item"><a href="/resources">Resources</a></div>
 			<div className="item"><a href="/about">About</a></div>
 			<div className="item"><a href="/contact">Contact</a></div>

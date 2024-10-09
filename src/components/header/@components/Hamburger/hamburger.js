@@ -45,8 +45,20 @@ function Hamburger() {
 							<li>Home</li>
 						</a>
 
+						<a href="/showcase">
+							<li>Showcase</li>
+						</a>
+
+						<a href="/demos">
+							<li>Demos</li>
+						</a>
+
 						<a href="/solutions">
 							<li>Solutions</li>
+						</a>
+
+						<a href="/resources">
+							<li>Resources</li>
 						</a>
 						
 						<a href="/about">
@@ -57,17 +69,15 @@ function Hamburger() {
 							<li>Contact</li>
 						</a>
 
-						<a href="/resources">
-							<li>Resources</li>
-						</a>
-
-						<a href="/demos">
-							<li>Demos</li>
+						<a href="/schedule-a-call">
+							<li>
+								<Button variant="outlined">Book a chat</Button>
+							</li>
 						</a>
 
 						<a href="/schedule-a-call">
 							<li>
-								<Button variant="outlined">Book a chat</Button>
+								<Button variant="contained">Let's chat</Button>
 							</li>
 						</a>
 					</ul>
