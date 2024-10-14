@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Layout from '../../layout/layout';
 import { Typography, Button } from '@mui/material';
 import SpiralImage from '../../assets/images/home-spiral.png';
@@ -24,15 +24,14 @@ import ExpoPack from "../../components/ExpoPack/ExpoPack";
 function Home() {
 	const [showPopup, setShowPopup] = useState(false);
 
-	const handleScroll = () => {
+	const handleScroll = useCallback(() => {
 		const middleOfPage = window.innerHeight / 2 + window.scrollY;
 		const pageHeight = document.documentElement.scrollHeight;
 
-		// Trigger when user is around the middle of the page
 		if (middleOfPage >= pageHeight / 2 && !showPopup) {
 			setShowPopup(true);
 		}
-	};
+	}, [showPopup]);
 
 	const handleClosePopup = () => {
 		setShowPopup(false);
@@ -41,7 +40,7 @@ function Home() {
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
-	}, [showPopup]);
+	}, [handleScroll]);
 
 	return (
 		<Layout>
