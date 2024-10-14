@@ -3,6 +3,7 @@ import './TickerLine.scss';
 
 const newsItems = [
     { key: "🚨 Special Offer: Testing Services with Up to 50% Off! 🚨" },
+    { key: "GET READY FOR BUSINESS EXPO STARTING AT £50! Souvenirs, Business Cards, Mugs, T-Shirts, Stand Prints and more." },
     { key: "Unit Tests at £1 | Integration Tests at £3 | End-To-End Tests at £5 | Accessibility Testing at £10!" },
     { key: "Don’t miss out on big savings! Let our experts ensure your software runs flawlessly. " },
     { key: "Calculate your savings today!" },
