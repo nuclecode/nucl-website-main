@@ -83,15 +83,15 @@ function Home() {
 					<OurServices/>
 				</page-section>
 				<QuoteCalculator/>
-				<div>
-				<h1>Scroll Down to Trigger Popup</h1>
-				<div style={{height: '200vh', padding: '20px'}}>
-					<p>Scroll halfway down the page to see the popup.</p>
-				</div>
+			{/*	<div>*/}
+			{/*	<h1>Scroll Down to Trigger Popup</h1>*/}
+			{/*	<div style={{height: '200vh', padding: '20px'}}>*/}
+			{/*		<p>Scroll halfway down the page to see the popup.</p>*/}
+			{/*	</div>*/}
 
-				{/* Popup with Matrix Animation */}
-				<Popup isOpen={showPopup} onClose={handleClosePopup}/>
-			</div>
+			{/*	/!* Popup with Matrix Animation *!/*/}
+			{/*	<Popup isOpen={showPopup} onClose={handleClosePopup}/>*/}
+			{/*</div>*/}
 			{/*<page-section>*/}
 			{/*	<AboutNuclecode />*/}
 			{/*</page-section>*/}
