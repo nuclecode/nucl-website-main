@@ -48,7 +48,6 @@ function Home() {
 			<DemoHero/>
 			<CarouselStack/>
 			<div className="home-page-container page-top-space">
-
 				{/*<div className="container relative">*/}
 				{/*	<img src={SpiralImage} className="spiral-image" alt="spiral" />*/}
 
@@ -99,16 +98,12 @@ function Home() {
 			{/*<page-section>*/}
 			{/*	<ReadyToStart />*/}
 			{/*</page-section>*/}
-
 			<ProcessSection/>
-
 			<PrimaryForm/>
-
 			{/*<Blog />*/}
 		</div>
 	{/*</div>*/
 	}
-
 </Layout>
 )
 	;

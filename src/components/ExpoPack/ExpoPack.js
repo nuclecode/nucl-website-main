@@ -11,7 +11,7 @@ const ExpoPack = () => {
                     Explore our special exhibition packs, designed to give your brand maximum exposure with minimal investment.
                 </p>
                 <Link to="/expo-ready" className={styles.ctaButton}>
-                    Learn More
+                    Learn More about it
                 </Link>
             </div>
         </div>

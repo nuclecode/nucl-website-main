@@ -7,12 +7,12 @@ const ExhibitionPacks = () => {
         {
             title: "Basic Pack",
             price: "£500",
-            features: ["1 Exhibition Stand", "Basic Listing in Catalog", "3 Staff Passes"],
+            features: ["1 Exhibition Stand", "Printed Catalog", "Logo and Business Cards"],
         },
         {
             title: "Standard Pack",
             price: "£1000",
-            features: ["2 Exhibition Stands", "Priority Listing in Catalog", "5 Staff Passes", "Social Media Coverage"],
+            features: ["2 Exhibition Stands", "Business Cards", "Social Media Coverage"],
         },
         {
             title: "Premium Pack",
