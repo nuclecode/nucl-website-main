@@ -1,0 +1,45 @@
+.demoCard {
+  position: relative;
+  border: 1px solid #7c8bfa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(51, 73, 255, 0.46);
+  overflow: hidden;
+  background-color: #e4e9fc;
+
+  .cardContent {
+    text-align: left;
+    color: #3349ff;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .cardDescription {
+    font-size: 1rem;
+    color: #4c59ff;
+    margin-bottom: 10px;
+  }
+
+  .ctaButton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #7c8bfa;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #5a6cfb;
+    }
+  }
+}

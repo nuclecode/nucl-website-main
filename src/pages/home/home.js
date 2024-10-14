@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../../layout/layout';
 import { Typography, Button } from '@mui/material';
 import SpiralImage from '../../assets/images/home-spiral.png';
@@ -16,12 +16,37 @@ import PrimaryForm from "../../components/primaryContactForm/PrimaryForm";
 import ProcessSection from "../../components/processSection/ProcessSection";
 // import Blog from "../blog/Blog";
 import AnimatedChart from "../../components/chart/AnimatedChart";
+import QuoteCalculator from "../../components/Quote/QuoteCalculator";
+import Popup from "../../components/Popup/Popup";
+import ExpoPack from "../../components/ExpoPack/ExpoPack";
+
 
 function Home() {
+	const [showPopup, setShowPopup] = useState(false);
+
+	const handleScroll = () => {
+		const middleOfPage = window.innerHeight / 2 + window.scrollY;
+		const pageHeight = document.documentElement.scrollHeight;
+
+		// Trigger when user is around the middle of the page
+		if (middleOfPage >= pageHeight / 2 && !showPopup) {
+			setShowPopup(true);
+		}
+	};
+
+	const handleClosePopup = () => {
+		setShowPopup(false);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [showPopup]);
+
 	return (
 		<Layout>
-			<DemoHero />
-			<CarouselStack />
+			<DemoHero/>
+			<CarouselStack/>
 			<div className="home-page-container page-top-space">
 
 				{/*<div className="container relative">*/}
@@ -52,29 +77,41 @@ function Home() {
 				{/*		<TestCalculator />*/}
 				{/*	*/}
 				{/*</div>*/}
-				<AnimatedChart />
-					<page-section>
-						<OurServices />
-					</page-section>
-
-					{/*<page-section>*/}
-					{/*	<AboutNuclecode />*/}
-					{/*</page-section>*/}
-
-					{/*<page-section>*/}
-					{/*	<ReadyToStart />*/}
-					{/*</page-section>*/}
-
-					<ProcessSection />
-
-					<PrimaryForm />
-
-					{/*<Blog />*/}
+				<ExpoPack />
+				<AnimatedChart/>
+				<page-section>
+					<OurServices/>
+				</page-section>
+				<QuoteCalculator/>
+				<div>
+				<h1>Scroll Down to Trigger Popup</h1>
+				<div style={{height: '200vh', padding: '20px'}}>
+					<p>Scroll halfway down the page to see the popup.</p>
 				</div>
-			{/*</div>*/}
-			
-		</Layout>
-	);
+
+				{/* Popup with Matrix Animation */}
+				<Popup isOpen={showPopup} onClose={handleClosePopup}/>
+			</div>
+			{/*<page-section>*/}
+			{/*	<AboutNuclecode />*/}
+			{/*</page-section>*/}
+
+			{/*<page-section>*/}
+			{/*	<ReadyToStart />*/}
+			{/*</page-section>*/}
+
+			<ProcessSection/>
+
+			<PrimaryForm/>
+
+			{/*<Blog />*/}
+		</div>
+	{/*</div>*/
+	}
+
+</Layout>
+)
+	;
 }
 
 
