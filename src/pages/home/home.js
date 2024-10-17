@@ -18,7 +18,7 @@ import ProcessSection from "../../components/processSection/ProcessSection";
 import AnimatedChart from "../../components/chart/AnimatedChart";
 import QuoteCalculator from "../../components/Quote/QuoteCalculator";
 // import Popup from "../../components/Popup/Popup";
-import ExpoPack from "../../components/ExpoPack/ExpoPack";
+// import ExpoPack from "../../components/ExpoPack/ExpoPack";
 
 
 function Home() {
@@ -76,7 +76,7 @@ function Home() {
 				{/*		<TestCalculator />*/}
 				{/*	*/}
 				{/*</div>*/}
-				<ExpoPack />
+				{/*<ExpoPack />*/}
 				<AnimatedChart/>
 				<page-section>
 					<OurServices/>
