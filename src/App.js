@@ -22,7 +22,8 @@ import Showcase from "./pages/Showcase/Showcase";
 // import Case2 from './components/case-studies/Case2';
 // import Case3 from './components/case-studies/Case3';
 // import Blog from './pages/blog/Blog';
-import ExpoReady from './pages/ExpoReady/ExpoReady';
+// import ExpoReady from './pages/ExpoReady/ExpoReady';
+
 function App() {
 	useEffect(() => {
 		AOS.init({
@@ -61,7 +62,7 @@ function App() {
 						</Routes>
 						<Routes>
 							<Route path="/calculate-your-tests" element={<CalculateTests/>}/>
-							<Route path="/expo-ready" element={<ExpoReady />}/>
+							{/*<Route path="/expo-ready" element={<ExpoReady />}/>*/}
 						</Routes>
 						<Routes>
 							<Route path="/solutions/frontend" element={<Frontend/>}/>
