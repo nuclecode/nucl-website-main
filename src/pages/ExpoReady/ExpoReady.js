@@ -20,7 +20,7 @@ const ExhibitionPacks = () => {
             features: ["3 Exhibition Stands", "Featured Listing in Catalog", "10 Staff Passes", "Custom Branding", "Event Sponsorship"],
         },
     ];
-
+    console.log("Packs:", packs); // Debugging line
     return (
         <Layout>
         <div className={styles.pageContainer}>
