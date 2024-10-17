@@ -15,17 +15,20 @@
 		}
 
 		.form-container {
-			margin-top: $spacing-2x;
-			margin-bottom: $spacing-2x;
-			display: flex;
+			//margin-bottom: $spacing-2x;
 			flex-direction: column;
 			gap: $spacing-2x;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			max-width: 400px;
+			margin: 0 auto;
 		}
 	}
 
 	.grid-container {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 
 		.item {
