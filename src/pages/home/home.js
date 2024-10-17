@@ -16,7 +16,7 @@ import PrimaryForm from "../../components/primaryContactForm/PrimaryForm";
 import ProcessSection from "../../components/processSection/ProcessSection";
 // import Blog from "../blog/Blog";
 import AnimatedChart from "../../components/chart/AnimatedChart";
-import QuoteCalculator from "../../components/Quote/QuoteCalculator";
+// import QuoteCalculator from "../../components/Quote/QuoteCalculator";
 // import Popup from "../../components/Popup/Popup";
 // import ExpoPack from "../../components/ExpoPack/ExpoPack";
 
@@ -81,7 +81,7 @@ function Home() {
 				<page-section>
 					<OurServices/>
 				</page-section>
-				<QuoteCalculator/>
+				{/*<QuoteCalculator/>*/}
 			{/*	<div>*/}
 			{/*	<h1>Scroll Down to Trigger Popup</h1>*/}
 			{/*	<div style={{height: '200vh', padding: '20px'}}>*/}
