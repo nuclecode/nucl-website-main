@@ -12,7 +12,7 @@ import Testing from './pages/solutions/testing/testing';
 import TermsAndConditions from './pages/termsAndConditions/termsAndConditions';
 import MarketingEmail from './pages/marketingEmail/marketingEmail';
 import Resources from './pages/resources/resources';
-import { Helmet } from 'react-helmet';
+import Helmet from 'react-helmet';
 import Demos from './pages/demos/Demos';
 import AOS from 'aos';
 import CalculateTests from "./pages/calculate-your-tests/CalculateTests";
@@ -45,7 +45,7 @@ function App() {
 				</script>
 				<script src="//code.tidio.co/fyq1apam6wmtjp8xebfds6kbunwbjfly.js" async></script>
 			</Helmet>
-
+			{/*Helmet amend*/}
 			<Router>
 						<Routes>
 							<Route path="/" exact element={<Home/>}/>
@@ -59,25 +59,24 @@ function App() {
 							<Route path="/demos" element={<Demos/>}/>
 							{/*<Route path="/blog" element={<Blog />} />*/}
 							{/*<Route path="/blog/:id" element={<BlogPost />} />*/}
-						</Routes>
-						<Routes>
+
+
 							<Route path="/calculate-your-tests" element={<CalculateTests/>}/>
 							{/*<Route path="/expo-ready" element={<ExpoReady />}/>*/}
-						</Routes>
-						<Routes>
+
+
 							<Route path="/solutions/frontend" element={<Frontend/>}/>
 							<Route path="/solutions/backend" element={<Backend/>}/>
 							<Route path="/solutions/testing" element={<Testing/>}/>
-						</Routes>
+
 						{/* <Routes>
 					<Route path="/case1" element={<Case1 />} />
 					<Route path="/case2" element={<Case2 />} />
 					<Route path="/case3" element={<Case3 />} />
 				</Routes> */}
-						<Routes>
+
 							<Route path="/terms-and-conditions" element={<TermsAndConditions/>}/>
-						</Routes>
-						<Routes>
+
 							<Route path="/sell-online" element={<MarketingEmail/>}/>
 						</Routes>
 			</Router>
