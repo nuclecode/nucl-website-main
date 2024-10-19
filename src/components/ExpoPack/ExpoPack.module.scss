@@ -1,28 +1,47 @@
 .demoCard {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #7c8bfa;
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
   box-shadow: 0 2px 5px rgba(51, 73, 255, 0.46);
   overflow: hidden;
-  background-color: #e4e9fc; //replace with a var
+  background-color: #e4e9fc; // Replace with a CSS variable if needed
+  transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   .cardContent {
+    flex: 1;
     text-align: left;
     color: #3349ff;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 
   .cardTitle {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+
   }
 
   .cardDescription {
     font-size: 1rem;
     color: #4c59ff;
     margin-bottom: 10px;
+    max-width: 400px;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
   }
 
   .ctaButton {
@@ -40,6 +59,22 @@
     &:hover {
       transform: scale(1.1);
       background-color: #5a6cfb;
+    }
+  }
+
+  .cardImage {
+    flex: 0 0 300px;
+    margin-left: 20px;
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 10px;
+      max-width: 100%;
     }
   }
 }
