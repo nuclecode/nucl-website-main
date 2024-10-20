@@ -65,6 +65,23 @@ $error-color: #7b010b;
 //$button-background-color-disabled: #bdbdbd;
 //$button-color-disabled: #757575;
 // Error color
+//
+//
+// NEW buttons
+$button-color: $color-accent;
+//$button-contained-color-hover: #f9992c;
+//$button-contained-color-focus: #f9992c;
+//$button-outlined-color-hover: transparent;
+//$button-outlined-color-focus: transparent;
+//$button-outlined-border-color-hover: #f9992c;
+//$button-outlined-border-color-focus: #f9992c;
+//$button-text-color-hover: #f9992c;
+//$button-text-color-focus: #f9992c;
+//$button-outlined-border-color-active: #dc531e;
+//$button-background-color-inactive: #f5f5f5;
+//$button-background-color-disabled: #bdbdbd;
+//$button-color-disabled: #757575;
+// Error color
 $error-color: #ff4d4f;
 
 // Link colors
@@ -100,7 +117,7 @@ $btn-primary-variant-2: #1B1212;
 $btn-primary-variant-2-hover: #3A2C2C;
 
 
-
+$footer-bg: #acb6ff;
 // responsive breakpoints
 $breakpoint-xs-down: 320px;
 $breakpoint-xs-up: 599px;

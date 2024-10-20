@@ -2,7 +2,10 @@
 
 .footer-container {
 	margin-top: 260px;
-	margin-bottom: $spacing-3x;
+	//margin-bottom: $spacing-3x;
+	background-color: #939eff;
+	padding: 20px;
+	border-radius: 30px 30px 0 0;
 
 
 	.newsletter-container {
@@ -33,11 +36,13 @@
 
 		.item {
 			a {
-				color: inherit;
+				color:#f0f4f8;
+				//color: inherit;
 			}
 
 			.footer-section-title {
-				color: $site-headline-color;
+				color: #f0f4f8;
+				//color: $site-headline-color;
 				font-weight: $site-bold;
 				margin-bottom: $spacing-1x;
 			}
@@ -49,6 +54,9 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-top: $spacing-2x;
+		margin-bottom: $spacing-3x;
+
+
 
 		.social-media {
 			display: flex;
@@ -56,7 +64,8 @@
 
 			.fab {
 				font-size: 24px;
-				color: $site-text-color;
+				color: #f0f4f8;
+				//color: $site-text-color;
 			}
 		}
 	}
