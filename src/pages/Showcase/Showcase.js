@@ -46,7 +46,7 @@ const insightsData2 = [
 
 const Showcase = () => {
     return (
-        <Layout>
+		<Layout title="Showcase | nuclecode - Innovative Web Development Solutions" description="Explore nuclecode&apos;s latest web development projects showcasing our expertise in creating high-performance, accessible, and user-friendly digital experiences.">
             <div className={styles.showcase}>
                 <h1>Our most recent projects</h1>
                 <section className={styles.customerProjects}>

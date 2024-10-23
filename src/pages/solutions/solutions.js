@@ -8,7 +8,7 @@ import './solutions.scss';
 
 function Solutions() {
 	return (
-		<Layout>
+		<Layout title="Solutions | nuclecode - Tailored Web Development Services." description="Discover nuclecode&apos;s wide range of web development services, from front-end design to back-end architecture, software testing, and automation solutions.">
 			<div className="solutions-page-container page-top-space">
 				<div className="container relative">
 					<Typography variant="h1">
@@ -17,7 +17,7 @@ function Solutions() {
 
 					<page-section>
 						<Typography variant="subtitle1" className="subtitle">
-							Whether it's to create your website from scratch or to 
+							Whether it&apos;s to create your website from scratch or to 
 							implement a CI/CD pipeline with custom tests, we are sure 
 							that we can help. Take a look at the range of services our 
 							professionals can help you with.

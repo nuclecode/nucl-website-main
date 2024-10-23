@@ -3,7 +3,7 @@ import Layout from '../../layout/layout';
 
 function TermsAndConditions() {
 	return (
-		<Layout>
+		<Layout title="Terms and Conditions | nuclecode - Policies and Legal Information." description="Review nuclecode&apos;s terms and conditions to understand our policies, legal agreements, and the terms of service for using our website and services.">
 			<div className="terms-and-conditions-container page-top-space">
 				<div className="container">
 					<Typography variant="h1">
@@ -19,7 +19,7 @@ function TermsAndConditions() {
 					<section>
 						By accessing this website or using our services, you accept 
 						these terms and conditions in full. Do not continue to use 
-						nuclecode's website or services if you do not accept 
+						nuclecode&apos;s website or services if you do not accept 
 						all of the terms and conditions stated on this page.
 					</section>
 
@@ -36,7 +36,7 @@ function TermsAndConditions() {
 							</li>
 							<li>
 								"You" refers to the user or client engaging with 
-								nuclecode's website or services.
+								nuclecode&apos;s website or services.
 							</li>
 						</ul>
 					</section>
@@ -65,7 +65,7 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								Fees for nuclecode's services are determined 
+								Fees for nuclecode&apos;s services are determined 
 								based on the scope of the project and are 
 								outlined in the project proposal or contract.
 							</li>
@@ -105,7 +105,7 @@ function TermsAndConditions() {
 					<section>
 						<ul>
 							<li>
-								nuclecode respects the confidentiality of our clients' 
+								nuclecode respects the confidentiality of our clients&apos; 
 								information and will not disclose any confidential 
 								information without prior consent.
 							</li>
@@ -172,7 +172,7 @@ function TermsAndConditions() {
 					</section>
 
 					<section>
-						By using nuclecode's website or services, you acknowledge 
+						By using nuclecode&apos;s website or services, you acknowledge 
 						that you have read, understood, and agree to these terms 
 						and conditions. If you have any questions or concerns, 
 						please contact us at legal@nuclecode.com.

@@ -6,7 +6,7 @@ import './frontend.scss';
 
 function Frontend() {
 	return (
-		<Layout>
+		<Layout title="Front-End Development | nuclecode - Modern and Responsive Designs." description="Enhance your user experience with nuclecode&apos;s front-end development services, offering responsive designs, intuitive interfaces, and cutting-edge technologies.">
 			<div className="frontend-solution-page-container page-top-space">
 				<div className="container">
 					<Typography variant="h1">Frontend Development</Typography>

@@ -6,7 +6,7 @@ import './testing.scss';
 
 function Testing() {
   return (
-    <Layout>
+		<Layout title="Software Testing | nuclecode - Reliable QA and Test Automation." description="Ensure the quality and reliability of your software with nuclecode&apos;s comprehensive software testing services, including automation, performance, and security testing.">
       <div className="testing-solution-page-container page-top-space">
         <div className="container">
           
