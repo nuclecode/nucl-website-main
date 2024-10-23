@@ -7,6 +7,15 @@
 	padding: 20px;
 	border-radius: 30px 30px 0 0;
 
+	.MuiTypography-root {
+		color: #f0f4f8;
+	}
+
+	.MuiTypography-overline,
+	.MuiTypography-caption,
+	.MuiTypography-subtitle1 {
+		color: #f0f4f8;
+	}
 
 	.newsletter-container {
 		margin-bottom: $spacing-5x;
@@ -103,4 +112,10 @@
 			}
 		}
 	}
+}
+
+.partner-badge {
+	margin-top: 30px;
+	text-align: center;
+
 }
