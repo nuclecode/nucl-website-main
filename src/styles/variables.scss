@@ -95,23 +95,41 @@ $button-contained-color-hover: linear-gradient(45deg, #dc531e, #f2642c); // Grad
 $button-contained-color-focus: linear-gradient(45deg, #ff4e50, #f9d423); // Alternative gradient for focus state
 $button-outlined-color-hover: transparent; // Outlined button background on hover
 $button-outlined-color-focus: transparent; // Outlined button background on focus
-$button-outlined-border-color: #f2642c;
-$button-outlined-border-color-hover: #dc531e; // Orange border for hover on outlined buttons
-$button-outlined-border-color-focus: #f2642c; // Orange border for focus on outlined buttons
-$button-outlined-text-color: #f2642c;
-$button-outlined-text-color-hover: #dc531e;
+//$button-outlined-border-color: #f2642c;
+//$button-outlined-border-color-hover: #dc531e; // Orange border for hover on outlined buttons
+//$button-outlined-border-color-focus: #f2642c; // Orange border for focus on outlined buttons
+//$button-outlined-text-color: #f2642c;
+//$button-outlined-text-color-hover: #dc531e;
 $button-text-color-hover: #ffffff; // White text color on hover
 $button-text-color-focus: #ffffff; // White text color on focus
-$button-outlined-border-color-active: #dc531e; // Darker orange border on active state
+//$button-outlined-border-color-active: #dc531e; // Darker orange border on active state
 $button-background-color-inactive: #f5f5f5; // Light gray for inactive button background
 $button-background-color-disabled: #bdbdbd; // Light gray for disabled background
 $button-color-disabled: #757575; // Disabled text color
 
 //BUTTONS
 //Primary CTA - to take a significant action towards purchasing or signing up for services
+//main CTA normal state
 $btn-primary: #007BFF;
+//main  CTA hover state
 $btn-primary-hover: #0056b3;
+//main CTA active state
 $btn-primary-active: #004080;
+
+
+//outlined CTA normal state
+$button-outlined-border-color: #004080;
+$button-outlined-text-color: #004080;
+//outlined CTA hover state
+$button-outlined-border-color-hover: #0064c2;
+$button-outlined-text-color-hover: #0064c2;
+//outlined CTA focus
+$button-outlined-border-color-focus: #0064c2;
+//outlined CTA active state
+$button-outlined-border-color-active: #001736; // Darker orange border on active state
+
+
+
 
 $btn-primary-variant-2: #1B1212;
 $btn-primary-variant-2-hover: #3A2C2C;
