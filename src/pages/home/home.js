@@ -44,9 +44,9 @@ function Home() {
 	// }, [showPopup]);
 
 	return (
-		<Layout>
-			<DemoHero/>
-			<CarouselStack/>
+		<Layout title="Home | nuclecode - Expert Web Development and Automation Testing Services." description="Welcome to the best company for web solutions, your trusted partner for web development, accessibility, and automation testing solutions. We specialize in creating high-performance, accessible websites and offer cutting-edge automation testing services to ensure your digital products meet the highest standards.Explore our expert solutions tailored to elevate your business online.">
+			<DemoHero />
+			<CarouselStack />
 			<div className="home-page-container page-top-space">
 				{/*<div className="container relative">*/}
 				{/*	<img src={SpiralImage} className="spiral-image" alt="spiral" />*/}
@@ -77,36 +77,36 @@ function Home() {
 				{/*	*/}
 				{/*</div>*/}
 				<ExpoPack />
-				<AnimatedChart/>
+				<AnimatedChart />
 				<page-section>
-					<OurServices/>
+					<OurServices />
 				</page-section>
 				{/*<QuoteCalculator/>*/}
-			{/*	<div>*/}
-			{/*	<h1>Scroll Down to Trigger Popup</h1>*/}
-			{/*	<div style={{height: '200vh', padding: '20px'}}>*/}
-			{/*		<p>Scroll halfway down the page to see the popup.</p>*/}
-			{/*	</div>*/}
+				{/*	<div>*/}
+				{/*	<h1>Scroll Down to Trigger Popup</h1>*/}
+				{/*	<div style={{height: '200vh', padding: '20px'}}>*/}
+				{/*		<p>Scroll halfway down the page to see the popup.</p>*/}
+				{/*	</div>*/}
 
-			{/*	/!* Popup with Matrix Animation *!/*/}
-			{/*	<Popup isOpen={showPopup} onClose={handleClosePopup}/>*/}
-			{/*</div>*/}
-			{/*<page-section>*/}
-			{/*	<AboutNuclecode />*/}
-			{/*</page-section>*/}
+				{/*	/!* Popup with Matrix Animation *!/*/}
+				{/*	<Popup isOpen={showPopup} onClose={handleClosePopup}/>*/}
+				{/*</div>*/}
+				{/*<page-section>*/}
+				{/*	<AboutNuclecode />*/}
+				{/*</page-section>*/}
 
-			{/*<page-section>*/}
-			{/*	<ReadyToStart />*/}
-			{/*</page-section>*/}
-			<ProcessSection/>
-			<PrimaryForm/>
-			{/*<Blog />*/}
-		</div>
-	{/*</div>*/
-	}
-</Layout>
-)
-	;
+				{/*<page-section>*/}
+				{/*	<ReadyToStart />*/}
+				{/*</page-section>*/}
+				<ProcessSection />
+				<PrimaryForm />
+				{/*<Blog />*/}
+			</div>
+			{/*</div>*/
+			}
+		</Layout>
+	)
+		;
 }
 
 

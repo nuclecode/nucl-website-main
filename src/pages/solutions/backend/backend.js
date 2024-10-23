@@ -6,7 +6,7 @@ import './backend.scss';
 
 function Backend() {
 	return (
-		<Layout>
+		<Layout title="Back-End Development | nuclecode - Scalable and Secure Systems." description="Power your applications with nuclecode&apos;s robust back-end development solutions, ensuring scalability, security, and seamless performance for your business.">
 			<div className="backend-solution-page-container page-top-space">
 				<div className="container">
 					<Typography variant="h1">Backend Development</Typography>

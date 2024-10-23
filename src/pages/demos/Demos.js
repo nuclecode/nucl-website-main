@@ -12,7 +12,7 @@ const Demos = () => {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
     return (
-        <Layout>
+		<Layout title="Demos | nuclecode - See Our Demo Work in Action." description="Explore the demo websites we have created to see how our projects look and perform. Browse live demos of nuclecode&apos;s websites and applications to experience the speed, design, and functionality of our digital solutions firsthand.">
             <div className={styles.demos}>
                 <h1>See how the websites we make look and perform.</h1>
                 <div className={styles.demosGrid}>

@@ -8,7 +8,7 @@ import './contact.scss';
 
 function Contact() {
 	return (
-		<Layout>
+		<Layout title="Contact Us | nuclecode - Get in Touch with Our Web Experts." description="Contact nuclecode today to discuss your web development needs, schedule a consultation, or get a quote for your next project.">
 			<div className="contact-page-container page-top-space">
 				<div className="container relative">
 					<Typography variant="h1">Contact</Typography>

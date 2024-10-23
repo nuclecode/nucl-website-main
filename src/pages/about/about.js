@@ -8,7 +8,7 @@ import './about.scss';
 
 function About () {
     return (
-		<Layout>
+		<Layout title="About Us | nuclecode - Your Trusted Web Development Partner." description="Learn more about nuclecode, our mission, vision, and the team of experts dedicated to delivering innovative web development solutions for your business.">
 			<div className="about-page-container page-top-space">
 				<div className="container relative">
 					<Typography variant="h1">About Us</Typography>
@@ -39,7 +39,7 @@ function About () {
 									drive growth and success but also ensure the reliability and 
 									sustainability of their software infrastructure. Through our 
 									commitment to excellence, we strive to provide our clients with 
-									the confidence and peace of mind they need to thrive in today's 
+									the confidence and peace of mind they need to thrive in today&apos;s 
 									dynamic digital landscape.
 								</Typography>
 							</Card>
@@ -97,7 +97,7 @@ function About () {
 										we conduct rigorous testing to identify and resolve any bugs or issues. 
 										Our dedicated QA team performs thorough testing across multiple devices 
 										and browsers, ensuring that your website performs flawlessly in every scenario. 
-										We don't consider the project complete until it meets our high 
+										We don&apos;t consider the project complete until it meets our high 
 										standards of excellence.
 									</section>
 
@@ -106,7 +106,7 @@ function About () {
 										With the website thoroughly tested and approved, we proceed to deployment. 
 										We handle all aspects of the deployment process, ensuring a smooth 
 										transition from development to live environment. But our support 
-										doesn't end there. We provide ongoing maintenance and support 
+										doesn&apos;t end there. We provide ongoing maintenance and support 
 										services to keep your website running smoothly and securely, 
 										helping you navigate any challenges that may arise.
 									</section>

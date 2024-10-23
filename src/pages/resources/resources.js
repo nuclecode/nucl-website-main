@@ -9,7 +9,7 @@ function Resources() {
     const placeholders = new Array(8).fill(null);
 
     return (
-        <Layout>
+		<Layout title="Resources | nuclecode - Insights and Tools for Web Development." description="Access valuable resources from nuclecode, including blogs, videos, guides, and industry - standard testing tools to elevate your web development projects.">
             <div className="resources-container">
                 <h1>Our Resources</h1>
                 <Syllabus />

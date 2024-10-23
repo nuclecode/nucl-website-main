@@ -1,3 +1,5 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import { HeaderType, FooterType } from '../libs/enums';
 import Header from '../components/header/header';
 import MinimalHeader from '../components/header/minimalHeader';
@@ -27,11 +29,17 @@ const PageFooter = ({footer}) => {
 function Layout({
 	header = HeaderType.Full, 
 	footer = FooterType.Full, 
+	title,
+	description,
 	children
 }) {
 
 	return (
 		<div className="page-container">
+			<Helmet>
+				<title>{title}</title>
+				<meta name="description" content={description} />
+			</Helmet>
 			<TickerLine />
 			<PageHeader header={header} />
 			{children}
